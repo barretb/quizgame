@@ -13,6 +13,20 @@ Stack TBD — to be determined with Barret.
 
 ## Learnings
 
+### 2026-05-09 — Test infrastructure compile fixes
+
+**Backend (xUnit):**
+- All three stub files were missing `using Xunit;`. With `<ImplicitUsings>enable</ImplicitUsings>`, Xunit types (`[Fact]`, `Assert`) are NOT auto-imported — explicit using is required.
+- `ApiEndpointTests.cs` already had `using Microsoft.AspNetCore.Mvc.Testing;`, `System.Net`, `System.Net.Http.Json` — only `using Xunit;` was missing.
+- After fix: `Build succeeded with 14 warning(s)` — all warnings are xUnit2020 (`Assert.True(false)` → `Assert.Fail`), intentional for stubs, not errors.
+
+**Frontend (Vitest):**
+- `package.json` had no Vitest-related packages. Added: `vitest@^1.0.0`, `@vitest/ui@^1.0.0`, `jsdom@^24.0.0`, `@vue/test-utils@^2.4.0`.
+- `vite.config.ts` imports changed from `vitest/config` (not `vite`) to get proper TypeScript typing for the `test` block. Added `test: { globals: true, environment: 'jsdom', include: ['src/**/*.{test,spec}.{ts,tsx}'] }`.
+- Created `frontend/tsconfig.test.json` extending base tsconfig with `"types": ["vitest/globals"]` and test file includes.
+- Also added `test` and `test:watch` npm scripts for convenience.
+- Result: `npx vitest run` discovers all 21 stubs across 3 test files — all fail with `expected true to be false` as designed. No TypeScript errors.
+
 ### 2026-05-09 — Test infrastructure scaffolded
 
 **Test strategy:**
@@ -41,3 +55,9 @@ Stack TBD — to be determined with Barret.
 - `tests/TEST-PLAN.md` — full test plan with scope, edge cases, pass/fail criteria
 
 **Cross-agent notes for Scarlett:** tsconfig.json excludes src/__tests__/** from build. Peacock needs separate tsconfig.test.json or vitest config to include test file types. Frontend build succeeds with test exclusion.
+
+
+## [2026-05-09 21:02 UTC] Team Coordination
+- Inbox decision from peacock-1 merged to decisions.md
+- Orchestration log recorded for peacock-1 execution
+- Session log created for test infrastructure work

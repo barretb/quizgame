@@ -1,0 +1,79 @@
+{
+  "quizId": "world-capitals-001",
+  "title": "World Capitals",
+  "topic": "Geography",
+  "description": "Test your knowledge of the world's capital cities across six continents.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What is the capital of France?",
+      "options": ["London", "Berlin", "Paris", "Madrid"],
+      "correctIndex": 2,
+      "explanation": "Paris has been the capital of France since the 10th century and is home to the Élysée Palace, seat of the French presidency."
+    },
+    {
+      "questionId": "q2",
+      "text": "What is the capital of Japan?",
+      "options": ["Osaka", "Tokyo", "Kyoto", "Hiroshima"],
+      "correctIndex": 1,
+      "explanation": "Tokyo became Japan's capital in 1869 when Emperor Meiji moved the imperial seat from Kyoto. It is now one of the world's largest metropolitan areas."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+      "correctIndex": 3,
+      "explanation": "Canberra was purpose-built as Australia's capital, chosen as a compromise between rivals Sydney and Melbourne. Construction began in 1913."
+    },
+    {
+      "questionId": "q4",
+      "text": "What is the capital of Brazil?",
+      "options": ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+      "correctIndex": 2,
+      "explanation": "Brasília replaced Rio de Janeiro as Brazil's capital in 1960. It was planned from scratch in the country's interior to promote development."
+    },
+    {
+      "questionId": "q5",
+      "text": "What is the capital of Canada?",
+      "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+      "correctIndex": 3,
+      "explanation": "Ottawa, located in Ontario near the Quebec border, has been Canada's capital since 1857 when Queen Victoria selected it."
+    },
+    {
+      "questionId": "q6",
+      "text": "What is the capital of Egypt?",
+      "options": ["Alexandria", "Cairo", "Luxor", "Giza"],
+      "correctIndex": 1,
+      "explanation": "Cairo is the capital and largest city of Egypt, with a history stretching back millennia. It sits near the ancient city of Memphis."
+    },
+    {
+      "questionId": "q7",
+      "text": "What is the capital of Argentina?",
+      "options": ["Buenos Aires", "Córdoba", "Rosario", "Mendoza"],
+      "correctIndex": 0,
+      "explanation": "Buenos Aires, meaning 'fair winds' in Spanish, has been Argentina's capital since 1880 and is the cultural heart of the country."
+    },
+    {
+      "questionId": "q8",
+      "text": "What is the administrative capital of South Africa?",
+      "options": ["Cape Town", "Johannesburg", "Durban", "Pretoria"],
+      "correctIndex": 3,
+      "explanation": "South Africa has three capitals: Pretoria (executive), Cape Town (legislative), and Bloemfontein (judicial). Pretoria is the administrative capital."
+    },
+    {
+      "questionId": "q9",
+      "text": "What is the capital of India?",
+      "options": ["Mumbai", "Kolkata", "New Delhi", "Chennai"],
+      "correctIndex": 2,
+      "explanation": "New Delhi, built during British colonial rule and inaugurated in 1931, is the capital territory of India and home to Parliament and the President's Residence."
+    },
+    {
+      "questionId": "q10",
+      "text": "What is the capital of Mexico?",
+      "options": ["Guadalajara", "Mexico City", "Monterrey", "Puebla"],
+      "correctIndex": 1,
+      "explanation": "Mexico City (Ciudad de México) is one of the largest cities in the Western Hemisphere and was built on the ruins of the Aztec capital Tenochtitlán."
+    }
+  ]
+}

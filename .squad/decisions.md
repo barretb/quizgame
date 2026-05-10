@@ -117,3 +117,43 @@
 - All meaningful changes require team consensus
 - Document architectural decisions here
 - Keep history focused on work, decisions focused on direction
+
+
+# Decision: Test Infrastructure Fix (Peacock)
+
+**Date:** 2026-05-09T20:57:26-04:00
+**By:** Mrs. Peacock
+**Category:** Test infrastructure
+
+## What
+
+Fixed two test infrastructure issues blocking CI:
+
+### Backend (xUnit)
+Added `using Xunit;` to all three stub files:
+- `backend/QuizGame.Api.Tests/QuizServiceTests.cs`
+- `backend/QuizGame.Api.Tests/ScoreCalculatorTests.cs`
+- `backend/QuizGame.Api.Tests/ApiEndpointTests.cs`
+
+### Frontend (Vitest)
+1. Added to `frontend/package.json` devDependencies: `vitest@^1.0.0`, `@vitest/ui@^1.0.0`, `jsdom@^24.0.0`, `@vue/test-utils@^2.4.0`
+2. Created `frontend/tsconfig.test.json` (extends base tsconfig, adds `"types": ["vitest/globals"]`)
+3. Updated `frontend/vite.config.ts`: changed import to `vitest/config`, added `test: { globals: true, environment: 'jsdom' }` block
+4. Added `test` and `test:watch` scripts to `package.json`
+
+## Why
+
+- `ImplicitUsings` in .NET SDK does NOT auto-import Xunit namespaces — explicit `using Xunit;` is always required in xUnit test files.
+- Vitest was missing from the project entirely; test stubs existed but had no runner or type support.
+- `import { defineConfig } from 'vitest/config'` is required (not `vite`) to get TypeScript types for the `test` config block.
+
+## Result
+
+- Backend: `Build succeeded with 14 warning(s)` — warnings only (xUnit2020 on stub assertions, intentional)
+- Frontend: `npx vitest run` discovers 21 stubs across 3 test files, all failing intentionally (`expected true to be false`)
+
+## Team Notes
+
+- The xUnit warning (xUnit2020) recommends `Assert.Fail(message)` over `Assert.True(false, message)`. Consider migrating stubs when implementing — not a blocker.
+- Vitest v1.6.1 resolved from `^1.0.0` range.
+
