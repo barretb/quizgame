@@ -1,0 +1,250 @@
+{
+  "quizId": "firefly-trivia-001",
+  "title": "Firefly Trivia",
+  "topic": "TV Shows",
+  "description": "You can't take the sky from me! Test your knowledge of the beloved Firefly verse.",
+  "version": "1.0.0",
+  "dateAdded": "2025-05-01",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What type of ship is Serenity?",
+      "options": [
+        "Firefly-class transport",
+        "Alliance cruiser",
+        "Hospital ship",
+        "Planetary shuttle"
+      ],
+      "correctIndex": 0,
+      "explanation": "Serenity is a Firefly-class transport ship, specifically an old Model 03-K64. Its worn condition is a recurring part of the show's charm."
+    },
+    {
+      "questionId": "q2",
+      "text": "Who serves as Serenity's pilot?",
+      "options": [
+        "Jayne Cobb",
+        "Hoban 'Wash' Washburne",
+        "Simon Tam",
+        "Book"
+      ],
+      "correctIndex": 1,
+      "explanation": "Wash is Serenity's pilot and Zoe's husband. He is known for his humor and excellent flying skills."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is Inara Serra's profession?",
+      "options": [
+        "Mechanic",
+        "Smuggler",
+        "Companion",
+        "Medic"
+      ],
+      "correctIndex": 2,
+      "explanation": "Inara is a Companion, a highly trained and socially respected profession in the Core worlds. Her shuttle is docked with Serenity."
+    },
+    {
+      "questionId": "q4",
+      "text": "Who is the doctor aboard Serenity?",
+      "options": [
+        "Shepherd Book",
+        "Lawrence Dobson",
+        "Jubal Early",
+        "Simon Tam"
+      ],
+      "correctIndex": 3,
+      "explanation": "Simon Tam is a trauma surgeon who goes on the run to protect his sister River. He becomes the crew's medical expert."
+    },
+    {
+      "questionId": "q5",
+      "text": "What is River Tam's relationship to Simon Tam?",
+      "options": [
+        "She is his sister",
+        "She is his cousin",
+        "She is his wife",
+        "She is his patient only"
+      ],
+      "correctIndex": 0,
+      "explanation": "River is Simon's younger sister, and rescuing her from Alliance experiments drives his storyline. Their sibling bond is central to the series."
+    },
+    {
+      "questionId": "q6",
+      "text": "What nickname is commonly used for soldiers who fought for Independence?",
+      "options": [
+        "Purplebelts",
+        "Browncoats",
+        "Skyjackets",
+        "Outriders"
+      ],
+      "correctIndex": 1,
+      "explanation": "Independents from the Unification War are often called Browncoats. Mal and Zoe are both veterans of that side."
+    },
+    {
+      "questionId": "q7",
+      "text": "What is the name of Jayne Cobb's favorite rifle?",
+      "options": [
+        "Betsy",
+        "Lucille",
+        "Vera",
+        "Athena"
+      ],
+      "correctIndex": 2,
+      "explanation": "Jayne lovingly names his customized rifle Vera. He references it in one of his most quoted lines from the show."
+    },
+    {
+      "questionId": "q8",
+      "text": "In Firefly lore, who are the Reavers?",
+      "options": [
+        "Alliance marines",
+        "Core-world mercenaries",
+        "Border customs officers",
+        "Violent, feral raiders from deep space"
+      ],
+      "correctIndex": 3,
+      "explanation": "Reavers are known for extreme brutality and terror across the outer worlds. Serenity later reveals their origin in the film."
+    },
+    {
+      "questionId": "q9",
+      "text": "What role does Shepherd Book fill on Serenity?",
+      "options": [
+        "Pastor and spiritual advisor",
+        "Bounty hunter",
+        "Engineer",
+        "Alliance informant"
+      ],
+      "correctIndex": 0,
+      "explanation": "Book is a shepherd (pastor) with deep scriptural knowledge and a mysterious background. His hidden past is hinted at repeatedly."
+    },
+    {
+      "questionId": "q10",
+      "text": "In Firefly slang, what does the word 'shiny' generally mean?",
+      "options": [
+        "Dangerous",
+        "Great or good",
+        "Expensive",
+        "Illegal"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Shiny' is a common positive expression meaning good, great, or okay. It's one of the show's most recognizable bits of slang."
+    },
+    {
+      "questionId": "q11",
+      "text": "In the film Serenity, what chemical is revealed to have created most Reavers?",
+      "options": [
+        "Miranda Gas",
+        "Blue Sun X-13",
+        "Pax",
+        "Regen-X"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pax was a government-created behavior-modifying agent tested on Miranda. It made most people too passive to live and drove a fraction violently insane."
+    },
+    {
+      "questionId": "q12",
+      "text": "On which planet was the Battle of Serenity Valley fought?",
+      "options": [
+        "Persephone",
+        "Sihnon",
+        "Ariel",
+        "Hera"
+      ],
+      "correctIndex": 3,
+      "explanation": "Serenity Valley was on the planet Hera, where the Independents suffered a decisive defeat. Mal and Zoe fought there."
+    },
+    {
+      "questionId": "q13",
+      "text": "Who is Zoe Alleyne Washburne married to?",
+      "options": [
+        "Wash",
+        "Mal",
+        "Jayne",
+        "Book"
+      ],
+      "correctIndex": 0,
+      "explanation": "Zoe is married to Wash, Serenity's pilot. Their marriage adds heart and humor to many episodes."
+    },
+    {
+      "questionId": "q14",
+      "text": "In 'The Train Job,' what does Mal decide to return after learning the truth?",
+      "options": [
+        "Gold bullion",
+        "Stolen medicine",
+        "Alliance rifles",
+        "Engine parts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mal returns the stolen medicine after realizing it is desperately needed by sick locals. This highlights his moral code despite being an outlaw."
+    },
+    {
+      "questionId": "q15",
+      "text": "In 'Our Mrs. Reynolds,' who does Mal unexpectedly end up married to?",
+      "options": [
+        "Inara Serra",
+        "Kaylee Frye",
+        "Saffron",
+        "Atherton Wing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Mal unknowingly enters a local marriage custom and becomes married to Saffron. She later proves to be a con artist."
+    },
+    {
+      "questionId": "q16",
+      "text": "Eavesdown Docks, visited in the pilot episode, is located on which world?",
+      "options": [
+        "Hera",
+        "Ariel",
+        "Sihnon",
+        "Persephone"
+      ],
+      "correctIndex": 3,
+      "explanation": "Eavesdown Docks is on Persephone and appears early in the series. It is one of the setting's memorable rough-and-tumble locations."
+    },
+    {
+      "questionId": "q17",
+      "text": "Besides English, which language is frequently heard in Firefly dialogue and signage?",
+      "options": [
+        "Mandarin Chinese",
+        "Japanese",
+        "Russian",
+        "Korean"
+      ],
+      "correctIndex": 0,
+      "explanation": "Firefly's future culture blends English with Mandarin Chinese words and phrases. This linguistic mix is a defining worldbuilding element."
+    },
+    {
+      "questionId": "q18",
+      "text": "In Serenity (2005), the Operative works for which governing power?",
+      "options": [
+        "Blue Sun Corporation",
+        "The Alliance",
+        "The Independents",
+        "The Companion Guild"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Operative is a loyal agent of the Alliance. He pursues River to suppress the Miranda secret."
+    },
+    {
+      "questionId": "q19",
+      "text": "Which bounty hunter boards Serenity in the episode 'Objects in Space'?",
+      "options": [
+        "Adelei Niska",
+        "Monty",
+        "Jubal Early",
+        "Badger"
+      ],
+      "correctIndex": 2,
+      "explanation": "Jubal Early infiltrates Serenity to capture River. The episode is known for its tense, psychological tone."
+    },
+    {
+      "questionId": "q20",
+      "text": "Which line from the theme song became one of Firefly's most famous phrases?",
+      "options": [
+        "Aim to misbehave",
+        "No power in the 'verse",
+        "Keep flyin'",
+        "You can't take the sky from me"
+      ],
+      "correctIndex": 3,
+      "explanation": "'You can't take the sky from me' appears in the opening theme and became an iconic Firefly motto. It captures the show's spirit of stubborn freedom."
+    }
+  ]
+}

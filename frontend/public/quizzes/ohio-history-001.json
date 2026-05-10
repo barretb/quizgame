@@ -1,0 +1,175 @@
+{
+  "quizId": "ohio-history-001",
+  "title": "Ohio History",
+  "topic": "US History",
+  "description": "Explore the rich history of the Buckeye State — from its founding to modern times.",
+  "version": "1.0.0",
+  "dateAdded": "2025-06-01",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "In what year did Ohio become the 17th state admitted to the Union?",
+      "options": ["1800", "1803", "1810", "1816"],
+      "correctIndex": 1,
+      "explanation": "Ohio was admitted to the Union on March 1, 1803, becoming the 17th state. Interestingly, Congress did not formally confirm Ohio's statehood until 1953, retroactively citing the 1803 date."
+    },
+    {
+      "questionId": "q2",
+      "text": "What is Ohio's official state nickname?",
+      "options": ["The Badger State", "The Hawkeye State", "The Buckeye State", "The Hoosier State"],
+      "correctIndex": 2,
+      "explanation": "Ohio is known as the Buckeye State, named after the Ohio buckeye tree (Aesculus glabra), which is native to the state. The buckeye nut resembles a deer's eye."
+    },
+    {
+      "questionId": "q3",
+      "text": "The Northwest Ordinance of 1787 created the Northwest Territory that would eventually become Ohio and four other states. Which of the following was NOT one of those states?",
+      "options": ["Indiana", "Michigan", "Kentucky", "Wisconsin"],
+      "correctIndex": 2,
+      "explanation": "Kentucky was not part of the Northwest Territory. The five states carved from the Northwest Territory were Ohio, Indiana, Illinois, Michigan, and Wisconsin. Kentucky was separated from Virginia."
+    },
+    {
+      "questionId": "q4",
+      "text": "The Battle of Fallen Timbers (1794) ended Native American resistance in Ohio. Which American general led U.S. forces to victory?",
+      "options": ["Andrew Jackson", "Anthony Wayne", "William Henry Harrison", "Winfield Scott"],
+      "correctIndex": 1,
+      "explanation": "General 'Mad Anthony' Wayne defeated the Western Confederacy of tribes at Fallen Timbers near present-day Toledo. The resulting Treaty of Greenville (1795) opened most of Ohio to American settlement."
+    },
+    {
+      "questionId": "q5",
+      "text": "How many U.S. presidents are associated with the state of Ohio (born there or representing the state)?",
+      "options": ["5", "6", "7", "8"],
+      "correctIndex": 3,
+      "explanation": "Eight presidents are associated with Ohio: William Henry Harrison, Ulysses S. Grant, Rutherford B. Hayes, James A. Garfield, Benjamin Harrison, William McKinley, William Howard Taft, and Warren G. Harding."
+    },
+    {
+      "questionId": "q6",
+      "text": "Which city served as Ohio's very first state capital when it achieved statehood in 1803?",
+      "options": ["Columbus", "Zanesville", "Marietta", "Chillicothe"],
+      "correctIndex": 3,
+      "explanation": "Chillicothe served as Ohio's first capital from 1803 to 1810. The capital then moved to Zanesville briefly (1810–1812), returned to Chillicothe (1812–1816), and finally moved to Columbus in 1816."
+    },
+    {
+      "questionId": "q7",
+      "text": "Ohio-born President William Henry Harrison holds which unfortunate distinction?",
+      "options": [
+        "He was the only president to resign from office",
+        "He served the shortest term in U.S. presidential history — just 31 days",
+        "He was the only president to be impeached twice",
+        "He was the only president never to live in the White House"
+      ],
+      "correctIndex": 1,
+      "explanation": "William Henry Harrison died of pneumonia on April 4, 1841, just 31 days after his inauguration — the shortest presidential term in U.S. history. He delivered the longest inaugural address in history in cold, wet weather."
+    },
+    {
+      "questionId": "q8",
+      "text": "Marietta, founded in 1788, holds what distinction in Ohio history?",
+      "options": [
+        "It was the first city incorporated west of the Mississippi",
+        "It was the first permanent American settlement in the Northwest Territory",
+        "It was where the Ohio Constitution was drafted",
+        "It was Ohio's first industrial city"
+      ],
+      "correctIndex": 1,
+      "explanation": "Marietta, founded on April 7, 1788, was the first permanent American settlement in the Northwest Territory. It was named after Marie Antoinette of France, honoring the French alliance during the Revolution."
+    },
+    {
+      "questionId": "q9",
+      "text": "The Ohio & Erie Canal, completed in 1832, connected Cleveland on Lake Erie to which city on the Ohio River?",
+      "options": ["Cincinnati", "Chillicothe", "Marietta", "Portsmouth"],
+      "correctIndex": 3,
+      "explanation": "The Ohio & Erie Canal ran 309 miles from Cleveland on Lake Erie south to Portsmouth on the Ohio River. It dramatically reduced shipping costs and helped Ohio become an economic powerhouse."
+    },
+    {
+      "questionId": "q10",
+      "text": "In which Ohio city did Wilbur and Orville Wright operate their bicycle shop while developing their flying machine?",
+      "options": ["Columbus", "Cleveland", "Dayton", "Cincinnati"],
+      "correctIndex": 2,
+      "explanation": "The Wright Brothers operated their bicycle shop in Dayton, Ohio, where they designed and built their early gliders and, ultimately, the Flyer. Their first powered flight, however, took place at Kitty Hawk, North Carolina."
+    },
+    {
+      "questionId": "q11",
+      "text": "In what year did the Wright Brothers achieve the first successful powered airplane flight?",
+      "options": ["1899", "1901", "1903", "1905"],
+      "correctIndex": 2,
+      "explanation": "On December 17, 1903, Orville Wright piloted the Flyer at Kitty Hawk, North Carolina, in the first successful powered, heavier-than-air flight. The flight lasted 12 seconds and covered 120 feet."
+    },
+    {
+      "questionId": "q12",
+      "text": "Neil Armstrong, the first person to walk on the moon (1969), was born in which small Ohio city?",
+      "options": ["Dayton", "Toledo", "Columbus", "Wapakoneta"],
+      "correctIndex": 3,
+      "explanation": "Neil Armstrong was born on August 5, 1930, in Wapakoneta, Ohio. The Neil Armstrong Air and Space Museum is located there in his honor, celebrating Ohio's aviation heritage."
+    },
+    {
+      "questionId": "q13",
+      "text": "Which Ohio city is home to the Rock and Roll Hall of Fame?",
+      "options": ["Cincinnati", "Cleveland", "Columbus", "Akron"],
+      "correctIndex": 1,
+      "explanation": "The Rock and Roll Hall of Fame is located in Cleveland, Ohio, which opened in 1995. Cleveland was chosen partly because disc jockey Alan Freed, who popularized the term 'rock and roll,' worked there."
+    },
+    {
+      "questionId": "q14",
+      "text": "What Ohio city was historically known as the 'Rubber Capital of the World' due to its dominant tire manufacturing industry?",
+      "options": ["Youngstown", "Toledo", "Akron", "Canton"],
+      "correctIndex": 2,
+      "explanation": "Akron became the center of the U.S. rubber industry in the early 20th century, home to Goodyear, Firestone, General Tire, and B.F. Goodrich. At its peak, Akron produced most of the world's rubber products."
+    },
+    {
+      "questionId": "q15",
+      "text": "Ohio played a major role in the Underground Railroad. Which Ohio city on the Ohio River served as one of the most important crossing points for freedom seekers from Kentucky?",
+      "options": ["Marietta", "Portsmouth", "Ripley", "Gallipolis"],
+      "correctIndex": 2,
+      "explanation": "Ripley, Ohio was a major hub of the Underground Railroad, thanks largely to Rev. John Rankin, whose hilltop home was a beacon for freedom seekers crossing the Ohio River from Kentucky. It inspired a scene in Harriet Beecher Stowe's 'Uncle Tom's Cabin.'"
+    },
+    {
+      "questionId": "q16",
+      "text": "Oberlin College in Ohio, founded in 1833, made history by being the first college in the United States to do what?",
+      "options": [
+        "Offer free tuition to all students",
+        "Award a PhD degree",
+        "Admit women and Black students on an equal basis with white men",
+        "Establish a law school"
+      ],
+      "correctIndex": 2,
+      "explanation": "Oberlin College was the first college in the U.S. to regularly admit women (1837) and Black students. It became a center of abolitionism and was a key stop on the Underground Railroad."
+    },
+    {
+      "questionId": "q17",
+      "text": "During the War of 1812, Commodore Oliver Hazard Perry defeated the British fleet at the Battle of Lake Erie. What was his famous message after the victory?",
+      "options": [
+        "'Don't fire until you see the whites of their eyes'",
+        "'We have met the enemy and they are ours'",
+        "'I have not yet begun to fight'",
+        "'Remember the Alamo'"
+      ],
+      "correctIndex": 1,
+      "explanation": "After defeating the British at the Battle of Lake Erie on September 10, 1813, Commodore Oliver Hazard Perry sent the message: 'We have met the enemy and they are ours.' This decisive victory gave the U.S. control of Lake Erie."
+    },
+    {
+      "questionId": "q18",
+      "text": "Ohio's ancient Hopewell culture (roughly 100 BCE – 500 CE) is best known for which achievement?",
+      "options": [
+        "Constructing cliff dwellings in the hills of southern Ohio",
+        "Building massive geometric earthwork enclosures and burial mounds",
+        "Developing one of North America's earliest writing systems",
+        "Establishing extensive copper mines along Lake Erie"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Hopewell culture built elaborate geometric earthwork enclosures and burial mounds across Ohio. The Newark Earthworks in Licking County are among the largest earthworks ever built, covering over four square miles."
+    },
+    {
+      "questionId": "q19",
+      "text": "Ulysses S. Grant, born in Point Pleasant, Ohio, rose to fame as a general in which war before becoming the 18th U.S. President?",
+      "options": ["The War of 1812", "The Mexican-American War", "The Civil War", "The Spanish-American War"],
+      "correctIndex": 2,
+      "explanation": "Ulysses S. Grant led Union forces to victory in the Civil War (1861–1865) as Commanding General of the U.S. Army. His victories at Vicksburg and in the Overland Campaign were decisive in ending the war."
+    },
+    {
+      "questionId": "q20",
+      "text": "William McKinley, born in Niles, Ohio and the 25th U.S. President, was assassinated in 1901 at a world's fair in which city?",
+      "options": ["Washington D.C.", "Chicago", "Buffalo", "Philadelphia"],
+      "correctIndex": 2,
+      "explanation": "President William McKinley was shot on September 6, 1901, at the Pan-American Exposition in Buffalo, New York, and died eight days later. He was the last Ohio president and the last Civil War veteran to serve as president."
+    }
+  ]
+}

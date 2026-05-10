@@ -1,0 +1,370 @@
+{
+  "quizId": "babylon5-trivia-001",
+  "title": "Babylon 5 Trivia",
+  "topic": "TV Shows",
+  "description": "The Babylon Project was our last, best hope for peace. Test your knowledge of this landmark sci-fi series.",
+  "version": "1.0.0",
+  "dateAdded": "2025-05-09",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "Who is the commanding officer of Babylon 5 at the start of Season 1?",
+      "options": [
+        "Jeffrey Sinclair",
+        "John Sheridan",
+        "Elizabeth Lochley",
+        "Susan Ivanova"
+      ],
+      "correctIndex": 0,
+      "explanation": "Commander Jeffrey Sinclair leads Babylon 5 in the first season. His arc later ties directly to Minbari history."
+    },
+    {
+      "questionId": "q2",
+      "text": "Who takes over command of Babylon 5 in Season 2?",
+      "options": [
+        "Michael Garibaldi",
+        "John Sheridan",
+        "David Corwin",
+        "Warren Keffer"
+      ],
+      "correctIndex": 1,
+      "explanation": "Captain John Sheridan becomes Babylon 5's new commander in Season 2. He ultimately leads the station through the Shadow War."
+    },
+    {
+      "questionId": "q3",
+      "text": "Ambassador Delenn belongs to which major species?",
+      "options": [
+        "Vorlon",
+        "Centauri",
+        "Minbari",
+        "Narn"
+      ],
+      "correctIndex": 2,
+      "explanation": "Delenn is Minbari and a member of their Grey Council. Her transformation arc is central to the series."
+    },
+    {
+      "questionId": "q4",
+      "text": "Londo Mollari is the ambassador of which empire?",
+      "options": [
+        "Narn Regime",
+        "Earth Alliance",
+        "Minbari Federation",
+        "Centauri Republic"
+      ],
+      "correctIndex": 3,
+      "explanation": "Londo represents the Centauri Republic on Babylon 5. His rise and tragic choices drive much of the political storyline."
+    },
+    {
+      "questionId": "q5",
+      "text": "G'Kar serves as ambassador for which people?",
+      "options": [
+        "Narn",
+        "Drazi",
+        "Brakiri",
+        "Pak'ma'ra"
+      ],
+      "correctIndex": 0,
+      "explanation": "G'Kar is the Narn ambassador and later a spiritual figure for his people. His relationship with Londo evolves dramatically across the series."
+    },
+    {
+      "questionId": "q6",
+      "text": "Babylon 5 is located in which star system?",
+      "options": [
+        "Proxima Centauri",
+        "Epsilon Eridani",
+        "Sirius",
+        "Vega"
+      ],
+      "correctIndex": 1,
+      "explanation": "The station is positioned in the Epsilon Eridani system. Nearby Epsilon III houses key First One technology."
+    },
+    {
+      "questionId": "q7",
+      "text": "On which world is the Great Machine located?",
+      "options": [
+        "Epsilon IV",
+        "Mars",
+        "Epsilon III",
+        "Minbar"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Great Machine is an ancient construct beneath the surface of Epsilon III. It can manipulate time and communications."
+    },
+    {
+      "questionId": "q8",
+      "text": "The Anla'shok are better known by what name?",
+      "options": [
+        "The Nightwatch",
+        "The Psycops",
+        "The Grey Council",
+        "The Rangers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Anla'shok is Minbari for the Rangers. They serve as a multi-species force dedicated to preserving peace and fighting the Shadows."
+    },
+    {
+      "questionId": "q9",
+      "text": "What is the name of the first Vorlon ambassador encountered on Babylon 5?",
+      "options": [
+        "Kosh Naranek",
+        "Ulkesh",
+        "Lorien",
+        "Sebastian"
+      ],
+      "correctIndex": 0,
+      "explanation": "The original Vorlon ambassador is Kosh Naranek. His cryptic guidance shapes key events in the Shadow conflict."
+    },
+    {
+      "questionId": "q10",
+      "text": "Which phrase is the Psi Corps motto?",
+      "options": [
+        "Faith manages",
+        "The Corps is Mother, the Corps is Father",
+        "No one here gets out alive",
+        "We stand between the candle and the star"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Psi Corps frequently uses 'The Corps is Mother, the Corps is Father.' It reflects the organization's indoctrination and control."
+    },
+    {
+      "questionId": "q11",
+      "text": "Which ancient power secretly manipulates younger races before the Shadow War erupts?",
+      "options": [
+        "Drakh",
+        "Soul Hunters",
+        "Shadows",
+        "Technomages"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Shadows engineer chaos to force evolutionary conflict. Their actions trigger wars among younger races."
+    },
+    {
+      "questionId": "q12",
+      "text": "Who is the ancient being Sheridan meets at Z'ha'dum who helps revive him?",
+      "options": [
+        "Kosh",
+        "Morden",
+        "Justin",
+        "Lorien"
+      ],
+      "correctIndex": 3,
+      "explanation": "Lorien is one of the First Ones and the first sentient being in the galaxy. He helps Sheridan return from near-death."
+    },
+    {
+      "questionId": "q13",
+      "text": "Who says the line 'Understanding is a three-edged sword'?",
+      "options": [
+        "Kosh",
+        "Sinclair",
+        "Delenn",
+        "Londo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kosh says this line, emphasizing that truth has multiple perspectives. It becomes one of the show's most quoted themes."
+    },
+    {
+      "questionId": "q14",
+      "text": "The Battle of the Line was fought between Earth and which species?",
+      "options": [
+        "Narn",
+        "Minbari",
+        "Centauri",
+        "Vorlons"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Battle of the Line was a decisive Earth-Minbari War engagement. The Minbari unexpectedly surrendered shortly afterward."
+    },
+    {
+      "questionId": "q15",
+      "text": "Which TV movie recounts the Earth-Minbari War and the Battle of the Line in detail?",
+      "options": [
+        "Thirdspace",
+        "The River of Souls",
+        "In the Beginning",
+        "A Call to Arms"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the Beginning provides major backstory on the Earth-Minbari War. Much of it is framed as Londo recounting history."
+    },
+    {
+      "questionId": "q16",
+      "text": "What is the title of Babylon 5's series finale episode?",
+      "options": [
+        "The Deconstruction of Falling Stars",
+        "Objects in Motion",
+        "No Surrender, No Retreat",
+        "Sleeping in Light"
+      ],
+      "correctIndex": 3,
+      "explanation": "Sleeping in Light is the emotional final episode of the series. It was filmed during Season 4 and later held for the true end."
+    },
+    {
+      "questionId": "q17",
+      "text": "What is Vir Cotto's role when he is first introduced?",
+      "options": [
+        "Londo's diplomatic aide",
+        "Station doctor",
+        "Narn attaché",
+        "Ranger trainee"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vir begins as Londo Mollari's assistant on Babylon 5. He eventually grows into a stronger moral and political figure."
+    },
+    {
+      "questionId": "q18",
+      "text": "Lennier primarily serves in what role aboard the station?",
+      "options": [
+        "Chief engineer",
+        "Delenn's aide",
+        "Earthforce intelligence liaison",
+        "Commercial dockmaster"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lennier acts as Delenn's aide and protector. His loyalty and inner conflict are recurring themes."
+    },
+    {
+      "questionId": "q19",
+      "text": "What is the name repeatedly used by the odd maintenance worker encountered around the Great Machine?",
+      "options": [
+        "Zagras",
+        "Zantras",
+        "Zathras",
+        "Zarthis"
+      ],
+      "correctIndex": 2,
+      "explanation": "The character insists his name is Zathras, though he mentions many similarly named relatives. It is a memorable running gag."
+    },
+    {
+      "questionId": "q20",
+      "text": "Who is Babylon 5's chief of security for most of the early series?",
+      "options": [
+        "Zack Allan",
+        "Warren Keffer",
+        "Alfred Bester",
+        "Michael Garibaldi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Michael Garibaldi serves as chief of security from the beginning. His loyalty struggles and recovery arc are major plotlines."
+    },
+    {
+      "questionId": "q21",
+      "text": "What is the name of the Vorlon homeworld?",
+      "options": [
+        "Vorlon Prime",
+        "Z'ha'dum",
+        "Coriana VI",
+        "Narn"
+      ],
+      "correctIndex": 0,
+      "explanation": "Vorlon Prime is identified as the Vorlon homeworld in Babylon 5 lore. It represents the secretive core of Vorlon civilization."
+    },
+    {
+      "questionId": "q22",
+      "text": "Who becomes Emperor of the Centauri Republic by the end of the main series?",
+      "options": [
+        "Vir Cotto",
+        "Londo Mollari",
+        "Cartagia",
+        "Refa"
+      ],
+      "correctIndex": 1,
+      "explanation": "Londo eventually becomes Emperor despite the personal cost and political manipulation around him. His reign is deeply tragic."
+    },
+    {
+      "questionId": "q23",
+      "text": "Which organization controls and monitors human telepaths in Earth Alliance space?",
+      "options": [
+        "Nightwatch",
+        "EarthDome Security",
+        "Psi Corps",
+        "Interstellar Alliance"
+      ],
+      "correctIndex": 2,
+      "explanation": "Psi Corps registers, trains, and polices telepaths, often through coercive means. Alfred Bester is one of its most notable members."
+    },
+    {
+      "questionId": "q24",
+      "text": "White Star ships are a hybrid of Minbari technology and which other ancient race's technology?",
+      "options": [
+        "Shadow",
+        "Drakh",
+        "Centauri",
+        "Vorlon"
+      ],
+      "correctIndex": 3,
+      "explanation": "White Stars combine Minbari design with Vorlon organic technology. They become crucial in the war against the Shadows."
+    },
+    {
+      "questionId": "q25",
+      "text": "After his release from captivity, who becomes a spiritual and political leader for the Narn resistance?",
+      "options": [
+        "G'Kar",
+        "Na'Toth",
+        "Ta'Lon",
+        "Ko D'Ath"
+      ],
+      "correctIndex": 0,
+      "explanation": "G'Kar evolves from politician to philosopher and resistance icon. His writings later shape Narn society."
+    },
+    {
+      "questionId": "q26",
+      "text": "Who delivers the declaration beginning 'I am Susan Ivanova, Commander...' during the Earth civil conflict?",
+      "options": [
+        "Elizabeth Lochley",
+        "Susan Ivanova",
+        "Talia Winters",
+        "Lyta Alexander"
+      ],
+      "correctIndex": 1,
+      "explanation": "Susan Ivanova delivers this speech in 'Severed Dreams.' It is one of her most famous moments in the series."
+    },
+    {
+      "questionId": "q27",
+      "text": "In the 'War Without End' arc, Sinclair is revealed to become which historical Minbari figure?",
+      "options": [
+        "Dukhat",
+        "Shai Alyt",
+        "Valen",
+        "Turhan"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sinclair travels to the past and becomes Valen, a revered Minbari religious figure. This resolves major prophecy threads."
+    },
+    {
+      "questionId": "q28",
+      "text": "What nickname is John Sheridan given after the Battle of the Line?",
+      "options": [
+        "Warleader",
+        "White Star One",
+        "Black Wolf",
+        "Starkiller"
+      ],
+      "correctIndex": 3,
+      "explanation": "Sheridan earns the nickname Starkiller after destroying the Black Star during the Earth-Minbari War. The title follows him throughout the series."
+    },
+    {
+      "questionId": "q29",
+      "text": "Which Babylon 5 TV movie serves as a pilot for a potential Rangers spin-off?",
+      "options": [
+        "The Legend of the Rangers",
+        "Thirdspace",
+        "The River of Souls",
+        "The Lost Tales"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Legend of the Rangers was produced as a backdoor pilot. It focuses on Ranger operations after the main series."
+    },
+    {
+      "questionId": "q30",
+      "text": "Which quote is a memorable Babylon 5 line about mortality and danger?",
+      "options": [
+        "The Corps is Mother, the Corps is Father",
+        "No one here gets out alive",
+        "We are all Kosh",
+        "Understanding is a three-edged sword"
+      ],
+      "correctIndex": 1,
+      "explanation": "'No one here gets out alive' is one of the show's darker, memorable lines. It reflects Babylon 5's recurring themes of sacrifice and mortality."
+    }
+  ]
+}

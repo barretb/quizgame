@@ -1,34 +1,33 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const props = defineProps<{
   shareText: string
-  shareUrl?: string
 }>()
 
 const emit = defineEmits<{ close: [] }>()
 
-const url = props.shareUrl ?? window.location.href
+const appUrl = import.meta.env.VITE_APP_URL || window.location.origin
 
-const twitterUrl = computed(() => {
-  const text = encodeURIComponent(props.shareText)
-  return `https://twitter.com/intent/tweet?text=${text}`
+const fullShareText = computed(() => `${props.shareText}\nPlay at: ${appUrl}`)
+
+const blueskyUrl = computed(() => {
+  return `https://bsky.app/intent/compose?text=${encodeURIComponent(fullShareText.value)}`
 })
 
-const facebookUrl = computed(() => {
-  const u = encodeURIComponent(url)
-  return `https://www.facebook.com/sharer/sharer.php?u=${u}`
+const mastodonUrl = computed(() => {
+  return `https://mastodon.social/share?text=${encodeURIComponent(fullShareText.value)}`
 })
 
 async function shareNative() {
   if (navigator.share) {
     try {
-      await navigator.share({ title: 'QuizGame', text: props.shareText, url })
+      await navigator.share({ title: "Barret's Quiz Game", text: fullShareText.value, url: appUrl })
     } catch {
       // user cancelled — no-op
     }
   }
 }
-
-import { computed } from 'vue'
 
 const canNativeShare = typeof navigator !== 'undefined' && !!navigator.share
 </script>
@@ -39,16 +38,16 @@ const canNativeShare = typeof navigator !== 'undefined' && !!navigator.share
       <div class="modal" role="dialog" aria-modal="true" aria-labelledby="share-title">
         <button class="modal-close" @click="emit('close')" aria-label="Close">✕</button>
         <h2 id="share-title" class="modal-title">Share Your Score 🎉</h2>
-        <p class="share-preview">{{ shareText }}</p>
+        <p class="share-preview">{{ fullShareText }}</p>
         <div class="share-actions">
           <button v-if="canNativeShare" class="share-btn native" @click="shareNative">
             <span>📤</span> Share
           </button>
-          <a :href="twitterUrl" target="_blank" rel="noopener" class="share-btn twitter">
-            <span>𝕏</span> Post on X
+          <a :href="blueskyUrl" target="_blank" rel="noopener" class="share-btn bluesky">
+            <span>🦋</span> Post on Bluesky
           </a>
-          <a :href="facebookUrl" target="_blank" rel="noopener" class="share-btn facebook">
-            <span>f</span> Share on Facebook
+          <a :href="mastodonUrl" target="_blank" rel="noopener" class="share-btn mastodon">
+            <span>🐘</span> Share on Mastodon
           </a>
         </div>
       </div>
@@ -154,13 +153,13 @@ const canNativeShare = typeof navigator !== 'undefined' && !!navigator.share
   color: #fff;
 }
 
-.share-btn.twitter {
-  background: #000;
+.share-btn.bluesky {
+  background: #0085ff;
   color: #fff;
 }
 
-.share-btn.facebook {
-  background: #1877f2;
+.share-btn.mastodon {
+  background: #6364ff;
   color: #fff;
 }
 </style>

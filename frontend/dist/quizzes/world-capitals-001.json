@@ -1,0 +1,370 @@
+{
+  "quizId": "world-capitals-001",
+  "title": "World Capitals",
+  "topic": "Geography",
+  "description": "Test your knowledge of the world's capital cities across six continents.",
+  "version": "1.0.0",
+  "dateAdded": "2025-01-20",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What is the capital of France?",
+      "options": [
+        "London",
+        "Berlin",
+        "Paris",
+        "Madrid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Paris has been the capital of France since the 10th century and is home to the Élysée Palace, seat of the French presidency."
+    },
+    {
+      "questionId": "q2",
+      "text": "What is the capital of Japan?",
+      "options": [
+        "Osaka",
+        "Tokyo",
+        "Kyoto",
+        "Hiroshima"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tokyo became Japan's capital in 1869 when Emperor Meiji moved the imperial seat from Kyoto. It is now one of the world's largest metropolitan areas."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is the capital of Australia?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Brisbane",
+        "Canberra"
+      ],
+      "correctIndex": 3,
+      "explanation": "Canberra was purpose-built as Australia's capital, chosen as a compromise between rivals Sydney and Melbourne. Construction began in 1913."
+    },
+    {
+      "questionId": "q4",
+      "text": "What is the capital of Brazil?",
+      "options": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Brasília",
+        "Salvador"
+      ],
+      "correctIndex": 2,
+      "explanation": "Brasília replaced Rio de Janeiro as Brazil's capital in 1960. It was planned from scratch in the country's interior to promote development."
+    },
+    {
+      "questionId": "q5",
+      "text": "What is the capital of Canada?",
+      "options": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ottawa, located in Ontario near the Quebec border, has been Canada's capital since 1857 when Queen Victoria selected it."
+    },
+    {
+      "questionId": "q6",
+      "text": "What is the capital of Egypt?",
+      "options": [
+        "Alexandria",
+        "Cairo",
+        "Luxor",
+        "Giza"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cairo is the capital and largest city of Egypt, with a history stretching back millennia. It sits near the ancient city of Memphis."
+    },
+    {
+      "questionId": "q7",
+      "text": "What is the capital of Argentina?",
+      "options": [
+        "Buenos Aires",
+        "Córdoba",
+        "Rosario",
+        "Mendoza"
+      ],
+      "correctIndex": 0,
+      "explanation": "Buenos Aires, meaning 'fair winds' in Spanish, has been Argentina's capital since 1880 and is the cultural heart of the country."
+    },
+    {
+      "questionId": "q8",
+      "text": "What is the administrative capital of South Africa?",
+      "options": [
+        "Cape Town",
+        "Johannesburg",
+        "Durban",
+        "Pretoria"
+      ],
+      "correctIndex": 3,
+      "explanation": "South Africa has three capitals: Pretoria (executive), Cape Town (legislative), and Bloemfontein (judicial). Pretoria is the administrative capital."
+    },
+    {
+      "questionId": "q9",
+      "text": "What is the capital of India?",
+      "options": [
+        "Mumbai",
+        "Kolkata",
+        "New Delhi",
+        "Chennai"
+      ],
+      "correctIndex": 2,
+      "explanation": "New Delhi, built during British colonial rule and inaugurated in 1931, is the capital territory of India and home to Parliament and the President's Residence."
+    },
+    {
+      "questionId": "q10",
+      "text": "What is the capital of Mexico?",
+      "options": [
+        "Guadalajara",
+        "Mexico City",
+        "Monterrey",
+        "Puebla"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mexico City (Ciudad de México) is one of the largest cities in the Western Hemisphere and was built on the ruins of the Aztec capital Tenochtitlán."
+    },
+    {
+      "questionId": "q11",
+      "text": "What is the capital of Nigeria?",
+      "options": [
+        "Lagos",
+        "Abuja",
+        "Kano",
+        "Port Harcourt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Abuja replaced Lagos as Nigeria's capital in 1991. It was purpose-built as a centrally located federal capital to balance the country's regional rivalries."
+    },
+    {
+      "questionId": "q12",
+      "text": "What is the capital of Saudi Arabia?",
+      "options": [
+        "Riyadh",
+        "Jeddah",
+        "Mecca",
+        "Medina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Riyadh is the capital and largest city of Saudi Arabia, home to the Royal Court and most government ministries. Jeddah serves as the commercial hub."
+    },
+    {
+      "questionId": "q13",
+      "text": "What is the capital of Kazakhstan?",
+      "options": [
+        "Almaty",
+        "Shymkent",
+        "Astana",
+        "Karaganda"
+      ],
+      "correctIndex": 2,
+      "explanation": "Astana has been Kazakhstan's capital since 1997, when it replaced Almaty. The city was briefly renamed Nur-Sultan (2019–2022) before reverting to Astana."
+    },
+    {
+      "questionId": "q14",
+      "text": "What is the capital of Fiji?",
+      "options": [
+        "Nadi",
+        "Lautoka",
+        "Labasa",
+        "Suva"
+      ],
+      "correctIndex": 3,
+      "explanation": "Suva, located on the southeastern coast of Viti Levu island, is the capital and largest city of Fiji, serving as its political and commercial center."
+    },
+    {
+      "questionId": "q15",
+      "text": "What is the capital of Morocco?",
+      "options": [
+        "Casablanca",
+        "Rabat",
+        "Marrakech",
+        "Fez"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rabat is Morocco's capital city, though Casablanca is larger and better known. Rabat has been the seat of government since 1912."
+    },
+    {
+      "questionId": "q16",
+      "text": "What is the capital of Jamaica?",
+      "options": [
+        "Kingston",
+        "Montego Bay",
+        "Ocho Rios",
+        "Negril"
+      ],
+      "correctIndex": 0,
+      "explanation": "Kingston is the capital and largest city of Jamaica, founded in 1693 after the earthquake that destroyed Port Royal. It is a major Caribbean cultural and economic hub."
+    },
+    {
+      "questionId": "q17",
+      "text": "What is the capital of Turkey?",
+      "options": [
+        "Istanbul",
+        "Izmir",
+        "Ankara",
+        "Bursa"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ankara became Turkey's capital in 1923 when Mustafa Kemal Atatürk established the Republic of Turkey. Istanbul, though larger, is not the capital."
+    },
+    {
+      "questionId": "q18",
+      "text": "What is the capital of Kenya?",
+      "options": [
+        "Mombasa",
+        "Kisumu",
+        "Nakuru",
+        "Nairobi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Nairobi is Kenya's capital and largest city, founded in 1899 as a railroad camp. It is now one of Africa's major economic and diplomatic centers."
+    },
+    {
+      "questionId": "q19",
+      "text": "What is the capital of Germany?",
+      "options": [
+        "Berlin",
+        "Munich",
+        "Hamburg",
+        "Frankfurt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Berlin is Germany's capital and largest city. It served as the capital of unified Germany since 1871, and reclaimed that role after reunification in 1990 when the seat of government moved from Bonn."
+    },
+    {
+      "questionId": "q20",
+      "text": "What is the capital of New Zealand?",
+      "options": [
+        "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Hamilton"
+      ],
+      "correctIndex": 1,
+      "explanation": "Wellington is New Zealand's capital, located at the southern tip of the North Island. Auckland is larger but Wellington became capital in 1865 due to its more central location."
+    },
+    {
+      "questionId": "q21",
+      "text": "What is the capital of Thailand?",
+      "options": [
+        "Chiang Mai",
+        "Phuket",
+        "Bangkok",
+        "Pattaya"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bangkok (officially Krung Thep Maha Nakhon) is the capital of Thailand and one of Southeast Asia's most populous cities, serving as the country's political and economic hub since 1782."
+    },
+    {
+      "questionId": "q22",
+      "text": "What is the capital of Pakistan?",
+      "options": [
+        "Karachi",
+        "Lahore",
+        "Peshawar",
+        "Islamabad"
+      ],
+      "correctIndex": 3,
+      "explanation": "Islamabad has been Pakistan's capital since 1966, replacing Karachi. It was purpose-built in the 1960s with a modern planned layout to serve as the seat of government."
+    },
+    {
+      "questionId": "q23",
+      "text": "What is the capital of China?",
+      "options": [
+        "Beijing",
+        "Shanghai",
+        "Guangzhou",
+        "Shenzhen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Beijing has served as China's capital for much of the last 700 years and is home to the Forbidden City and Tiananmen Square. Shanghai is larger but is China's financial center, not its capital."
+    },
+    {
+      "questionId": "q24",
+      "text": "What is the capital of Ghana?",
+      "options": [
+        "Kumasi",
+        "Accra",
+        "Tamale",
+        "Cape Coast"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accra is Ghana's capital and largest city, located on the Gulf of Guinea. It became the capital of the Gold Coast Colony under British rule and remained so after independence in 1957."
+    },
+    {
+      "questionId": "q25",
+      "text": "What is the capital of Cuba?",
+      "options": [
+        "Santiago de Cuba",
+        "Holguín",
+        "Havana",
+        "Camagüey"
+      ],
+      "correctIndex": 2,
+      "explanation": "Havana (La Habana) is Cuba's capital and largest city, founded by the Spanish in the 16th century. It is famous for its colorful colonial architecture and classic American cars."
+    },
+    {
+      "questionId": "q26",
+      "text": "What is the capital of the United Arab Emirates?",
+      "options": [
+        "Dubai",
+        "Sharjah",
+        "Ajman",
+        "Abu Dhabi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Abu Dhabi is the capital of the United Arab Emirates, though Dubai is more internationally famous. Abu Dhabi is the largest emirate and home to the UAE's federal government."
+    },
+    {
+      "questionId": "q27",
+      "text": "What is the capital of Peru?",
+      "options": [
+        "Lima",
+        "Cusco",
+        "Arequipa",
+        "Trujillo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lima is Peru's capital and home to about a third of the country's population. Founded by Spanish conquistador Francisco Pizarro in 1535, it replaced the Inca capital Cusco."
+    },
+    {
+      "questionId": "q28",
+      "text": "What is the capital of the Philippines?",
+      "options": [
+        "Cebu",
+        "Manila",
+        "Davao",
+        "Quezon City"
+      ],
+      "correctIndex": 1,
+      "explanation": "Manila is the capital of the Philippines and one of the world's most densely populated cities. Quezon City, while within Metro Manila, is a separate city and not the capital."
+    },
+    {
+      "questionId": "q29",
+      "text": "What is the capital of Uzbekistan?",
+      "options": [
+        "Samarkand",
+        "Bukhara",
+        "Tashkent",
+        "Namangan"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tashkent is the capital and largest city of Uzbekistan, and one of Central Asia's oldest cities. It is a major economic and cultural hub along the historic Silk Road."
+    },
+    {
+      "questionId": "q30",
+      "text": "What is the capital of Ethiopia?",
+      "options": [
+        "Dire Dawa",
+        "Gondar",
+        "Bahir Dar",
+        "Addis Ababa"
+      ],
+      "correctIndex": 3,
+      "explanation": "Addis Ababa is Ethiopia's capital and the seat of the African Union. Founded in 1886 by Emperor Menelik II, it is the highest-elevation capital city in Africa."
+    }
+  ]
+}

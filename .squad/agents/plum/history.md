@@ -83,3 +83,22 @@ Stack TBD — to be determined with Barret.
 2. Squad state commit (.squad/ files)
 
 **Team status:** All core features now wired end-to-end. Ready for testing and QA.
+
+---
+
+### 2026-05-10T09:46:07 — README.md Documentation Complete
+
+**Action:** Written comprehensive README.md at repository root.
+
+**What it covers:**
+- Project title and feature summary (browser-based quiz app, 10+ topics, immediate feedback, star ratings, social sharing, fully client-side)
+- Tech stack (Vue 3 + Vite + Pinia + TypeScript + Vitest)
+- List of 10 available quizzes with question counts
+- Prerequisites (Node.js 18+, npm)
+- Setup and running instructions (dev at localhost:5173, build to dist/)
+- Test execution (vitest run, watch mode)
+- Quiz addition guide with JSON schema and index.json format
+- Project structure overview
+- Usage flow (Home → Quiz → Results → History)
+
+**Key notes:** README reflects current state: fully client-side architecture (no backend dependency), static quiz data from /public/quizzes/, Vite dev server on 5173, built artifacts in frontend/dist/. No secrets or env vars needed for development (VITE_APP_URL informational only). Schema doc includes minimum 10 questions requirement, correctIndex, and explanation fields as per ADR-002.

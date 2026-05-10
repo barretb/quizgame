@@ -1,0 +1,250 @@
+{
+  "quizId": "marvel-movies-001",
+  "title": "Marvel Movie Trivia",
+  "topic": "Movies",
+  "description": "How well do you know the Marvel Cinematic Universe? Test your knowledge of Earth's Mightiest Heroes.",
+  "version": "1.0.0",
+  "dateAdded": "2025-04-15",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "Who plays Tony Stark / Iron Man in the MCU?",
+      "options": [
+        "Robert Downey Jr.",
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Jeremy Renner"
+      ],
+      "correctIndex": 0,
+      "explanation": "Robert Downey Jr. debuted as Tony Stark in Iron Man (2008). His performance helped launch and define the MCU."
+    },
+    {
+      "questionId": "q2",
+      "text": "At the end of Captain America: The First Avenger, who is found frozen in the ice?",
+      "options": [
+        "Bucky Barnes",
+        "Steve Rogers",
+        "Johann Schmidt",
+        "Howard Stark"
+      ],
+      "correctIndex": 1,
+      "explanation": "Steve crashes the Valkyrie into the Arctic and is preserved in ice for decades. He wakes up in the modern era."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is the name of Thanos's home planet in Avengers: Infinity War?",
+      "options": [
+        "Xandar",
+        "Knowhere",
+        "Titan",
+        "Nidavellir"
+      ],
+      "correctIndex": 2,
+      "explanation": "Thanos shows Doctor Strange his ruined homeworld, Titan. He claims its collapse validated his extremist worldview."
+    },
+    {
+      "questionId": "q4",
+      "text": "Captain America's shield is primarily made of which metal in the MCU?",
+      "options": [
+        "Adamantium",
+        "Uru",
+        "Titanium",
+        "Vibranium"
+      ],
+      "correctIndex": 3,
+      "explanation": "Howard Stark presents the shield as made from vibranium, a rare Wakandan metal. It absorbs kinetic energy very efficiently."
+    },
+    {
+      "questionId": "q5",
+      "text": "Which film is the first movie released in the MCU?",
+      "options": [
+        "Iron Man",
+        "The Incredible Hulk",
+        "Thor",
+        "Captain America: The First Avenger"
+      ],
+      "correctIndex": 0,
+      "explanation": "Iron Man released in 2008 and introduced Tony Stark and Nick Fury's post-credits appearance. It kicked off the MCU timeline in theaters."
+    },
+    {
+      "questionId": "q6",
+      "text": "Before becoming Vision, what was the name of Tony Stark's AI assistant?",
+      "options": [
+        "F.R.I.D.A.Y.",
+        "J.A.R.V.I.S.",
+        "E.D.I.T.H.",
+        "KAREN"
+      ],
+      "correctIndex": 1,
+      "explanation": "J.A.R.V.I.S. is Tony's original AI system. Elements of J.A.R.V.I.S. are used in creating Vision in Avengers: Age of Ultron."
+    },
+    {
+      "questionId": "q7",
+      "text": "On which planet is the Soul Stone obtained in Avengers: Infinity War?",
+      "options": [
+        "Morag",
+        "Nidavellir",
+        "Vormir",
+        "Titan"
+      ],
+      "correctIndex": 2,
+      "explanation": "Vormir is the location where a loved one must be sacrificed to claim the Soul Stone. Both Thanos and later Clint/Natasha travel there."
+    },
+    {
+      "questionId": "q8",
+      "text": "What phrase is commonly used in Black Panther as a Wakandan salute?",
+      "options": [
+        "For Asgard!",
+        "By Bast's will!",
+        "Wakanda rises!",
+        "Wakanda Forever!"
+      ],
+      "correctIndex": 3,
+      "explanation": "Wakanda Forever is the iconic salute and rallying cry throughout Black Panther and later MCU appearances. It symbolizes unity and pride."
+    },
+    {
+      "questionId": "q9",
+      "text": "Who directed Guardians of the Galaxy (2014)?",
+      "options": [
+        "James Gunn",
+        "Taika Waititi",
+        "Jon Watts",
+        "Peyton Reed"
+      ],
+      "correctIndex": 0,
+      "explanation": "James Gunn directed Guardians of the Galaxy and helped define its humor and music-driven style. He also directed Vol. 2 and Vol. 3."
+    },
+    {
+      "questionId": "q10",
+      "text": "What is Doctor Strange's first name?",
+      "options": [
+        "Victor",
+        "Stephen",
+        "Samuel",
+        "Simon"
+      ],
+      "correctIndex": 1,
+      "explanation": "Doctor Strange's full name is Stephen Strange. He is introduced as a neurosurgeon in Doctor Strange (2016)."
+    },
+    {
+      "questionId": "q11",
+      "text": "Who says 'I am Iron Man' in the climax of Avengers: Endgame?",
+      "options": [
+        "Steve Rogers",
+        "Peter Parker",
+        "Tony Stark",
+        "James Rhodes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Tony Stark delivers the line before using the Infinity Stones to defeat Thanos's army. It mirrors his iconic line from Iron Man (2008)."
+    },
+    {
+      "questionId": "q12",
+      "text": "In Spider-Man: No Way Home, who casts the spell that goes wrong and affects the multiverse?",
+      "options": [
+        "Wong",
+        "Loki",
+        "Scarlet Witch",
+        "Doctor Strange"
+      ],
+      "correctIndex": 3,
+      "explanation": "Doctor Strange begins a memory-altering spell for Peter Parker, but interruptions destabilize it. The result pulls in visitors from other universes."
+    },
+    {
+      "questionId": "q13",
+      "text": "At the start of Avengers: Infinity War, where is the Mind Stone located?",
+      "options": [
+        "In Vision's forehead",
+        "In Asgard's vault",
+        "On Knowhere",
+        "On Vormir"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Mind Stone is embedded in Vision's forehead after events from Age of Ultron. Thanos seeks it as one of the final stones."
+    },
+    {
+      "questionId": "q14",
+      "text": "What is the name of Thor's axe forged in Avengers: Infinity War?",
+      "options": [
+        "Gungnir",
+        "Stormbreaker",
+        "Jarnbjorn",
+        "Skofnung"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thor forges Stormbreaker on Nidavellir with help from Eitri, Rocket, and Groot. The weapon can summon the Bifrost."
+    },
+    {
+      "questionId": "q15",
+      "text": "Who kills Loki at the beginning of Avengers: Infinity War?",
+      "options": [
+        "Ebony Maw",
+        "Hela",
+        "Thanos",
+        "Cull Obsidian"
+      ],
+      "correctIndex": 2,
+      "explanation": "Thanos kills Loki after Loki attempts to betray him with a dagger. This happens aboard the Asgardian refugee ship."
+    },
+    {
+      "questionId": "q16",
+      "text": "Which realm is key to the Avengers' time-travel plan in Avengers: Endgame?",
+      "options": [
+        "Mirror Dimension",
+        "Dark Dimension",
+        "Astral Plane",
+        "Quantum Realm"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Avengers use the Quantum Realm plus Pym Particles to navigate time. This plan is central to the Time Heist."
+    },
+    {
+      "questionId": "q17",
+      "text": "Who is T'Challa's younger sister in Black Panther?",
+      "options": [
+        "Shuri",
+        "Nakia",
+        "Okoye",
+        "Ramonda"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shuri is Wakanda's brilliant princess and chief technologist. She designs many of Black Panther's advanced tools."
+    },
+    {
+      "questionId": "q18",
+      "text": "In Captain Marvel, what is the name of Carol Danvers' Air Force best friend?",
+      "options": [
+        "Peggy Carter",
+        "Maria Rambeau",
+        "Natasha Romanoff",
+        "Janet Van Dyne"
+      ],
+      "correctIndex": 1,
+      "explanation": "Maria Rambeau is Carol's close friend and fellow pilot. Her daughter Monica later appears in other MCU projects."
+    },
+    {
+      "questionId": "q19",
+      "text": "In Spider-Man: Far From Home, what is Mysterio's real name?",
+      "options": [
+        "Adrian Toomes",
+        "Mac Gargan",
+        "Quentin Beck",
+        "Herman Schultz"
+      ],
+      "correctIndex": 2,
+      "explanation": "Mysterio is actually Quentin Beck, a former Stark employee. He uses drones and illusions to fake superheroic threats."
+    },
+    {
+      "questionId": "q20",
+      "text": "What battle cry does Captain America shout while charging in Avengers: Endgame's final battle?",
+      "options": [
+        "For Midgard!",
+        "To me, Avengers!",
+        "Heroes, assemble!",
+        "Avengers, assemble!"
+      ],
+      "correctIndex": 3,
+      "explanation": "Captain America finally says 'Avengers, assemble!' in Endgame. It is a long-awaited payoff for MCU fans."
+    }
+  ]
+}

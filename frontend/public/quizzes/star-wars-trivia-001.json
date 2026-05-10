@@ -1,0 +1,220 @@
+{
+  "quizId": "star-wars-trivia-001",
+  "title": "Star Wars: Movies & TV Trivia",
+  "topic": "Star Wars",
+  "description": "From the Skywalker Saga to The Mandalorian and beyond — put your Star Wars knowledge to the test across movies, animated shows, and live-action series.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What is the name of Han Solo's ship?",
+      "options": ["Millennium Falcon", "Slave I", "Ghost", "Razor Crest"],
+      "correctIndex": 0,
+      "explanation": "The Millennium Falcon is Han Solo's famous freighter. Han won it from Lando Calrissian in a game of sabacc. It made the Kessel Run in less than 12 parsecs."
+    },
+    {
+      "questionId": "q2",
+      "text": "Who is Luke Skywalker's father?",
+      "options": ["Obi-Wan Kenobi", "Darth Maul", "Darth Vader", "Palpatine"],
+      "correctIndex": 2,
+      "explanation": "Darth Vader is Luke Skywalker's father, revealed in The Empire Strikes Back. Before turning to the dark side, he was Anakin Skywalker, a Jedi Knight trained by Obi-Wan Kenobi."
+    },
+    {
+      "questionId": "q3",
+      "text": "On which planet does Luke find Yoda?",
+      "options": ["Tatooine", "Hoth", "Dagobah", "Endor"],
+      "correctIndex": 2,
+      "explanation": "Luke Skywalker finds Yoda on Dagobah, a remote swamp planet. Yoda went into self-imposed exile there after the fall of the Republic and the rise of the Empire."
+    },
+    {
+      "questionId": "q4",
+      "text": "What color is Mace Windu's lightsaber?",
+      "options": ["Blue", "Green", "Red", "Purple"],
+      "correctIndex": 3,
+      "explanation": "Mace Windu wields a distinctive purple lightsaber. Actor Samuel L. Jackson personally requested the unique color so he could be spotted in crowd scenes. It is the only purple lightsaber in the films."
+    },
+    {
+      "questionId": "q5",
+      "text": "What is the name of the Mandalorian bounty hunter in The Mandalorian?",
+      "options": ["Boba Fett", "Din Djarin", "Jango Fett", "Cad Bane"],
+      "correctIndex": 1,
+      "explanation": "The Mandalorian's real name is Din Djarin, though he is typically referred to simply as Mando. He is a foundling who was raised by the Mandalorian creed after being orphaned."
+    },
+    {
+      "questionId": "q6",
+      "text": "What species is Grogu (Baby Yoda)?",
+      "options": ["Unknown", "Same species as Yoda", "Jedi species", "Zygerrian"],
+      "correctIndex": 1,
+      "explanation": "Grogu is the same species as Yoda. The species has no official name in canon — George Lucas kept it intentionally mysterious. Grogu is approximately 50 years old despite appearing as an infant."
+    },
+    {
+      "questionId": "q7",
+      "text": "In which film does Obi-Wan Kenobi say 'Hello there'?",
+      "options": ["A New Hope", "The Phantom Menace", "Revenge of the Sith", "Attack of the Clones"],
+      "correctIndex": 2,
+      "explanation": "Obi-Wan Kenobi says 'Hello there' to General Grievous in Revenge of the Sith (2005). The line has since become one of the most iconic and quoted phrases in Star Wars fandom."
+    },
+    {
+      "questionId": "q8",
+      "text": "What is Darth Vader's real name?",
+      "options": ["Anakin Skywalker", "Obi-Wan Kenobi", "Count Dooku", "Qui-Gon Jinn"],
+      "correctIndex": 0,
+      "explanation": "Darth Vader's real name is Anakin Skywalker. He was seduced to the dark side by Emperor Palpatine and became Darth Vader after being gravely injured during his duel with Obi-Wan on Mustafar."
+    },
+    {
+      "questionId": "q9",
+      "text": "Which planet is destroyed by the Death Star in A New Hope?",
+      "options": ["Naboo", "Coruscant", "Alderaan", "Tatooine"],
+      "correctIndex": 2,
+      "explanation": "The Death Star destroys Alderaan on the orders of Grand Moff Tarkin in A New Hope. Princess Leia watches helplessly as her home planet is obliterated to demonstrate the station's power."
+    },
+    {
+      "questionId": "q10",
+      "text": "Who trained Obi-Wan Kenobi?",
+      "options": ["Yoda", "Qui-Gon Jinn", "Mace Windu", "Count Dooku"],
+      "correctIndex": 1,
+      "explanation": "Qui-Gon Jinn was Obi-Wan Kenobi's Jedi Master. Qui-Gon discovered young Anakin Skywalker on Tatooine and believed him to be the Chosen One. He was killed by Darth Maul on Naboo."
+    },
+    {
+      "questionId": "q11",
+      "text": "What is the name of the bar in Mos Eisley?",
+      "options": ["Jabba's Palace", "Dex's Diner", "Mos Eisley Cantina", "The Outlander Club"],
+      "correctIndex": 2,
+      "explanation": "The Mos Eisley Cantina is the famous bar where Luke and Obi-Wan meet Han Solo and Chewbacca in A New Hope. Obi-Wan called Mos Eisley 'a wretched hive of scum and villainy.'"
+    },
+    {
+      "questionId": "q12",
+      "text": "Who is the Sith master of Darth Maul?",
+      "options": ["Count Dooku", "Darth Vader", "Darth Sidious", "Snoke"],
+      "correctIndex": 2,
+      "explanation": "Darth Sidious (Emperor Palpatine) is the master of Darth Maul. Maul was taken as an apprentice in secret, in violation of the Jedi Order's Rule of Two as understood publicly."
+    },
+    {
+      "questionId": "q13",
+      "text": "What is Ahsoka Tano's species?",
+      "options": ["Twi'lek", "Togruta", "Zabrak", "Mirialan"],
+      "correctIndex": 1,
+      "explanation": "Ahsoka Tano is a Togruta, recognizable by her white and blue head-tails (montrals and lekku). She was Anakin Skywalker's Padawan learner and later became a key figure in the Rebellion."
+    },
+    {
+      "questionId": "q14",
+      "text": "Who directed The Empire Strikes Back?",
+      "options": ["George Lucas", "J.J. Abrams", "Richard Marquand", "Irvin Kershner"],
+      "correctIndex": 3,
+      "explanation": "The Empire Strikes Back (1980) was directed by Irvin Kershner, not George Lucas. Lucas produced the film and wrote the story, while Leigh Brackett and Lawrence Kasdan co-wrote the screenplay."
+    },
+    {
+      "questionId": "q15",
+      "text": "What phrase do Jedi use as a common farewell?",
+      "options": ["May the Force be with you", "The Force awakens", "In service to the Republic", "Peace and prosperity"],
+      "correctIndex": 0,
+      "explanation": "'May the Force be with you' is the iconic phrase associated with the Jedi. It serves as both a farewell and a blessing, wishing the recipient the guidance and protection of the Force."
+    },
+    {
+      "questionId": "q16",
+      "text": "What is the name of Boba Fett's ship?",
+      "options": ["Millennium Falcon", "Ghost", "Slave I", "Razor Crest"],
+      "correctIndex": 2,
+      "explanation": "Boba Fett's ship is the Slave I (now often referred to as Firespray-31-class patrol and attack craft). It was originally the ship of his father Jango Fett and is renowned for its distinctive flying posture."
+    },
+    {
+      "questionId": "q17",
+      "text": "Which show features the Bad Batch clone squad?",
+      "options": ["The Clone Wars", "The Bad Batch", "Rebels", "Andor"],
+      "correctIndex": 1,
+      "explanation": "The Bad Batch is the animated series following Clone Force 99 — an elite squad of mutant clones — as they navigate life after Order 66. The team first appeared in The Clone Wars Season 7."
+    },
+    {
+      "questionId": "q18",
+      "text": "What Sith Rule states there can only be two Sith?",
+      "options": ["Rule of One", "Rule of Two", "Rule of Three", "Rule of the Sith"],
+      "correctIndex": 1,
+      "explanation": "The Rule of Two was established by Darth Bane after the destruction of the Brotherhood of Darkness. It states there can only be one Sith Master and one apprentice — no more, no less."
+    },
+    {
+      "questionId": "q19",
+      "text": "In Andor, what is Cassian Andor's primary arc?",
+      "options": ["To find Luke Skywalker", "To destroy the Death Star", "To become a rebel spy", "To hunt bounty hunters"],
+      "correctIndex": 2,
+      "explanation": "Andor follows Cassian Andor's journey from a self-interested survivor to a committed rebel spy and freedom fighter. It is a prequel to Rogue One showing how the Rebellion was built from the ground up."
+    },
+    {
+      "questionId": "q20",
+      "text": "Who voices Darth Vader in the original trilogy?",
+      "options": ["Mark Hamill", "James Earl Jones", "David Prowse", "Frank Oz"],
+      "correctIndex": 1,
+      "explanation": "James Earl Jones provided the iconic voice of Darth Vader in the original trilogy. David Prowse physically performed the character on set, but his voice was dubbed by Jones in post-production."
+    },
+    {
+      "questionId": "q21",
+      "text": "What is the name of the main rebel squadron in the animated series Rebels?",
+      "options": ["Phoenix Squadron", "Rogue Squadron", "Gold Squadron", "Red Squadron"],
+      "correctIndex": 0,
+      "explanation": "Phoenix Squadron is the rebel cell that the Ghost crew operates alongside in Star Wars Rebels. The series follows the crew of the Ghost as they fight the Empire years before the Battle of Yavin."
+    },
+    {
+      "questionId": "q22",
+      "text": "What is the name of the clone commander who serves Anakin Skywalker in The Clone Wars?",
+      "options": ["Commander Cody", "Rex", "Wolffe", "Gregor"],
+      "correctIndex": 1,
+      "explanation": "Captain Rex (CT-7567) is Anakin Skywalker's trusted clone captain throughout The Clone Wars. He later appears in Rebels and The Mandalorian, having removed his inhibitor chip before Order 66."
+    },
+    {
+      "questionId": "q23",
+      "text": "Which planet is the Obi-Wan Kenobi series primarily set on?",
+      "options": ["Coruscant", "Tatooine", "Mandalore", "Jedha"],
+      "correctIndex": 1,
+      "explanation": "The Obi-Wan Kenobi limited series is primarily set on Tatooine, where Obi-Wan has been living in exile watching over young Luke Skywalker from a distance for ten years after Order 66."
+    },
+    {
+      "questionId": "q24",
+      "text": "In The Book of Boba Fett, who is the main antagonist?",
+      "options": ["Moff Gideon", "The Pyke Syndicate", "The Hutts", "Darth Vader"],
+      "correctIndex": 1,
+      "explanation": "The Pyke Syndicate serves as the main antagonist in The Book of Boba Fett. Boba Fett and Fennec Shand must go to war against the Pykes, who are attempting to take over the spice trade on Tatooine."
+    },
+    {
+      "questionId": "q25",
+      "text": "What is Darth Maul's homeworld?",
+      "options": ["Dathomir", "Tatooine", "Mustafar", "Naboo"],
+      "correctIndex": 0,
+      "explanation": "Darth Maul is from Dathomir, home of the Nightsisters. He was taken from his mother Mother Talzin by Darth Sidious as an infant to be trained as his Sith apprentice."
+    },
+    {
+      "questionId": "q26",
+      "text": "Who kills Qui-Gon Jinn?",
+      "options": ["Count Dooku", "General Grievous", "Darth Maul", "Darth Sidious"],
+      "correctIndex": 2,
+      "explanation": "Darth Maul kills Qui-Gon Jinn during the climactic duel on Naboo in The Phantom Menace. This is a pivotal moment in the saga, leading Obi-Wan to train Anakin Skywalker."
+    },
+    {
+      "questionId": "q27",
+      "text": "What is notable about General Grievous's combat style?",
+      "options": ["He uses a single lightsaber", "He wields multiple lightsabers simultaneously", "He uses a Darksaber", "He uses a Force pike"],
+      "correctIndex": 1,
+      "explanation": "General Grievous is famous for wielding multiple lightsabers simultaneously — up to four at once. He collects them as trophies from Jedi he has killed. He was trained in lightsaber combat by Count Dooku."
+    },
+    {
+      "questionId": "q28",
+      "text": "Who wields the Darksaber in The Mandalorian season 2?",
+      "options": ["Moff Gideon", "Din Djarin", "Bo-Katan", "Boba Fett"],
+      "correctIndex": 0,
+      "explanation": "Moff Gideon wields the Darksaber in The Mandalorian season 2. The ancient black-bladed lightsaber was created by the first Mandalorian Jedi and is a symbol of leadership over Mandalore."
+    },
+    {
+      "questionId": "q29",
+      "text": "Which planet is home to the Wookiees?",
+      "options": ["Endor", "Kashyyyk", "Dagobah", "Tatooine"],
+      "correctIndex": 1,
+      "explanation": "Kashyyyk is the forested homeworld of the Wookiees, including Chewbacca. The planet appeared in Revenge of the Sith during the Battle of Kashyyyk, where Yoda fought alongside Wookiee warriors."
+    },
+    {
+      "questionId": "q30",
+      "text": "What is the final film of the Skywalker Saga?",
+      "options": ["The Last Jedi", "The Force Awakens", "The Rise of Skywalker", "Return of the Jedi"],
+      "correctIndex": 2,
+      "explanation": "The Rise of Skywalker (2019) is the final installment in the Skywalker Saga, completing the nine-episode main series. It was directed by J.J. Abrams and features the final confrontation with Emperor Palpatine."
+    }
+  ],
+  "dateAdded": "2026-05-09T00:00:00+00:00"
+}

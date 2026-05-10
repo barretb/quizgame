@@ -1,0 +1,360 @@
+{
+  "quizId": "us-state-capitals-001",
+  "title": "US State Capitals",
+  "topic": "US Geography",
+  "description": "Can you name all 50 US state capitals? Test your knowledge of American geography.",
+  "version": "1.0.0",
+  "dateAdded": "2025-03-10",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What is the capital of Alabama?",
+      "options": ["Birmingham", "Huntsville", "Montgomery", "Mobile"],
+      "correctIndex": 2,
+      "explanation": "Montgomery is Alabama's capital and was the first capital of the Confederacy in 1861. Birmingham is Alabama's largest city but has never been the capital."
+    },
+    {
+      "questionId": "q2",
+      "text": "What is the capital of Alaska?",
+      "options": ["Juneau", "Anchorage", "Fairbanks", "Sitka"],
+      "correctIndex": 0,
+      "explanation": "Juneau is Alaska's capital and the only U.S. state capital not reachable by road. Anchorage is much larger but is not the capital."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is the capital of Arizona?",
+      "options": ["Tucson", "Scottsdale", "Tempe", "Phoenix"],
+      "correctIndex": 3,
+      "explanation": "Phoenix is Arizona's capital and also its largest city, one of the few U.S. states where the capital city is also the largest city."
+    },
+    {
+      "questionId": "q4",
+      "text": "What is the capital of Arkansas?",
+      "options": ["Fort Smith", "Fayetteville", "Little Rock", "Jonesboro"],
+      "correctIndex": 2,
+      "explanation": "Little Rock has been Arkansas's capital since 1821. It is located on the south bank of the Arkansas River in the geographic center of the state."
+    },
+    {
+      "questionId": "q5",
+      "text": "What is the capital of California?",
+      "options": ["Los Angeles", "San Francisco", "Sacramento", "San Diego"],
+      "correctIndex": 2,
+      "explanation": "Sacramento is California's capital, not Los Angeles. Sacramento became the permanent state capital in 1854 and is located in the Central Valley."
+    },
+    {
+      "questionId": "q6",
+      "text": "What is the capital of Colorado?",
+      "options": ["Colorado Springs", "Denver", "Boulder", "Fort Collins"],
+      "correctIndex": 1,
+      "explanation": "Denver is both Colorado's capital and its largest city. It sits at an elevation of exactly 5,280 feet above sea level, earning it the nickname 'the Mile High City.'"
+    },
+    {
+      "questionId": "q7",
+      "text": "What is the capital of Connecticut?",
+      "options": ["Bridgeport", "New Haven", "Stamford", "Hartford"],
+      "correctIndex": 3,
+      "explanation": "Hartford is Connecticut's capital and has been an insurance industry center since the 1800s. Bridgeport is the state's largest city but is not the capital."
+    },
+    {
+      "questionId": "q8",
+      "text": "What is the capital of Delaware?",
+      "options": ["Wilmington", "Newark", "Dover", "Middletown"],
+      "correctIndex": 2,
+      "explanation": "Dover is Delaware's capital, located in the center of the state. Wilmington is larger but Dover has been the capital since 1777."
+    },
+    {
+      "questionId": "q9",
+      "text": "What is the capital of Florida?",
+      "options": ["Miami", "Jacksonville", "Orlando", "Tallahassee"],
+      "correctIndex": 3,
+      "explanation": "Tallahassee is Florida's capital, not Miami or Orlando. It was selected as capital in 1824 as a compromise location between Pensacola and St. Augustine."
+    },
+    {
+      "questionId": "q10",
+      "text": "What is the capital of Georgia?",
+      "options": ["Savannah", "Augusta", "Macon", "Atlanta"],
+      "correctIndex": 3,
+      "explanation": "Atlanta is Georgia's capital and largest city. It became the capital in 1868 and is home to many major corporations and the world's busiest airport."
+    },
+    {
+      "questionId": "q11",
+      "text": "What is the capital of Hawaii?",
+      "options": ["Honolulu", "Hilo", "Kailua", "Pearl City"],
+      "correctIndex": 0,
+      "explanation": "Honolulu is Hawaii's capital and largest city, located on the island of Oahu. It is the only U.S. state capital located outside of the continental United States."
+    },
+    {
+      "questionId": "q12",
+      "text": "What is the capital of Idaho?",
+      "options": ["Idaho Falls", "Nampa", "Boise", "Pocatello"],
+      "correctIndex": 2,
+      "explanation": "Boise is Idaho's capital and largest city, situated along the Boise River. Its name comes from the French word 'boisé' meaning 'wooded.'"
+    },
+    {
+      "questionId": "q13",
+      "text": "What is the capital of Illinois?",
+      "options": ["Chicago", "Rockford", "Springfield", "Peoria"],
+      "correctIndex": 2,
+      "explanation": "Springfield is Illinois's capital, not Chicago. Springfield is famously associated with Abraham Lincoln, who practiced law there before becoming president."
+    },
+    {
+      "questionId": "q14",
+      "text": "What is the capital of Indiana?",
+      "options": ["Fort Wayne", "Evansville", "South Bend", "Indianapolis"],
+      "correctIndex": 3,
+      "explanation": "Indianapolis is Indiana's capital and largest city. Named after Indiana and the Greek word for city, it has been the state capital since 1825."
+    },
+    {
+      "questionId": "q15",
+      "text": "What is the capital of Iowa?",
+      "options": ["Cedar Rapids", "Des Moines", "Sioux City", "Davenport"],
+      "correctIndex": 1,
+      "explanation": "Des Moines is Iowa's capital and largest city, located where the Raccoon River meets the Des Moines River. It has been the state capital since 1857."
+    },
+    {
+      "questionId": "q16",
+      "text": "What is the capital of Kansas?",
+      "options": ["Wichita", "Overland Park", "Lawrence", "Topeka"],
+      "correctIndex": 3,
+      "explanation": "Topeka is Kansas's capital, though Wichita is the state's largest city. Topeka is located on the Kansas River and has been the capital since 1861."
+    },
+    {
+      "questionId": "q17",
+      "text": "What is the capital of Kentucky?",
+      "options": ["Louisville", "Lexington", "Covington", "Frankfort"],
+      "correctIndex": 3,
+      "explanation": "Frankfort is Kentucky's capital, though Louisville is the largest city. Frankfort was chosen as a compromise capital in 1792 when Kentucky became a state."
+    },
+    {
+      "questionId": "q18",
+      "text": "What is the capital of Louisiana?",
+      "options": ["New Orleans", "Shreveport", "Baton Rouge", "Lafayette"],
+      "correctIndex": 2,
+      "explanation": "Baton Rouge is Louisiana's capital, not New Orleans. The name means 'red stick' in French, referring to a red-painted post marking a tribal boundary seen by early explorers."
+    },
+    {
+      "questionId": "q19",
+      "text": "What is the capital of Maine?",
+      "options": ["Portland", "Bangor", "Augusta", "Lewiston"],
+      "correctIndex": 2,
+      "explanation": "Augusta is Maine's capital, while Portland is the state's largest city. Augusta, located on the Kennebec River, became the capital in 1832."
+    },
+    {
+      "questionId": "q20",
+      "text": "What is the capital of Maryland?",
+      "options": ["Baltimore", "Silver Spring", "Frederick", "Annapolis"],
+      "correctIndex": 3,
+      "explanation": "Annapolis is Maryland's capital, located on the Chesapeake Bay. Baltimore is much larger but Annapolis has been the state capital since 1694."
+    },
+    {
+      "questionId": "q21",
+      "text": "What is the capital of Massachusetts?",
+      "options": ["Worcester", "Springfield", "Boston", "Cambridge"],
+      "correctIndex": 2,
+      "explanation": "Boston is both Massachusetts's capital and its largest city. One of America's oldest cities, Boston was founded in 1630 and played a central role in the American Revolution."
+    },
+    {
+      "questionId": "q22",
+      "text": "What is the capital of Michigan?",
+      "options": ["Detroit", "Grand Rapids", "Lansing", "Ann Arbor"],
+      "correctIndex": 2,
+      "explanation": "Lansing is Michigan's capital, not Detroit. Lansing became the capital in 1847; Detroit, while much larger, is the automotive industry hub but not the seat of government."
+    },
+    {
+      "questionId": "q23",
+      "text": "What is the capital of Minnesota?",
+      "options": ["Minneapolis", "Saint Paul", "Duluth", "Rochester"],
+      "correctIndex": 1,
+      "explanation": "Saint Paul is Minnesota's capital. It is one of the Twin Cities alongside Minneapolis; while Minneapolis is slightly larger, Saint Paul has been the capital since 1849."
+    },
+    {
+      "questionId": "q24",
+      "text": "What is the capital of Mississippi?",
+      "options": ["Biloxi", "Gulfport", "Jackson", "Hattiesburg"],
+      "correctIndex": 2,
+      "explanation": "Jackson is Mississippi's capital and largest city, named after President Andrew Jackson. It sits near the geographic center of the state on the Pearl River."
+    },
+    {
+      "questionId": "q25",
+      "text": "What is the capital of Missouri?",
+      "options": ["Kansas City", "St. Louis", "Springfield", "Jefferson City"],
+      "correctIndex": 3,
+      "explanation": "Jefferson City is Missouri's capital, named after President Thomas Jefferson. Kansas City and St. Louis are far larger, but Jefferson City has been the capital since 1826."
+    },
+    {
+      "questionId": "q26",
+      "text": "What is the capital of Montana?",
+      "options": ["Billings", "Missoula", "Helena", "Great Falls"],
+      "correctIndex": 2,
+      "explanation": "Helena is Montana's capital. Billings is Montana's largest city, but Helena was chosen as the capital in 1875, largely due to its role as a gold rush boomtown."
+    },
+    {
+      "questionId": "q27",
+      "text": "What is the capital of Nebraska?",
+      "options": ["Omaha", "Lincoln", "Bellevue", "Grand Island"],
+      "correctIndex": 1,
+      "explanation": "Lincoln is Nebraska's capital and second-largest city, named after President Abraham Lincoln. Omaha is the largest city but Lincoln has been the capital since 1867."
+    },
+    {
+      "questionId": "q28",
+      "text": "What is the capital of Nevada?",
+      "options": ["Las Vegas", "Reno", "Henderson", "Carson City"],
+      "correctIndex": 3,
+      "explanation": "Carson City is Nevada's capital, not Las Vegas. Named after explorer Kit Carson, it is one of the smallest state capitals in the U.S. by population."
+    },
+    {
+      "questionId": "q29",
+      "text": "What is the capital of New Hampshire?",
+      "options": ["Manchester", "Nashua", "Concord", "Dover"],
+      "correctIndex": 2,
+      "explanation": "Concord is New Hampshire's capital. Manchester is the state's largest city, but Concord has served as the capital since 1808 and is home to the famous Eagle Hotel."
+    },
+    {
+      "questionId": "q30",
+      "text": "What is the capital of New Jersey?",
+      "options": ["Newark", "Jersey City", "Trenton", "Paterson"],
+      "correctIndex": 2,
+      "explanation": "Trenton is New Jersey's capital, located on the Delaware River across from Pennsylvania. Newark is the state's largest city but Trenton has been the capital since 1790."
+    },
+    {
+      "questionId": "q31",
+      "text": "What is the capital of New Mexico?",
+      "options": ["Albuquerque", "Santa Fe", "Las Cruces", "Rio Rancho"],
+      "correctIndex": 1,
+      "explanation": "Santa Fe is New Mexico's capital and the oldest state capital in the U.S., founded in 1610. Albuquerque is larger but Santa Fe is the seat of government."
+    },
+    {
+      "questionId": "q32",
+      "text": "What is the capital of New York?",
+      "options": ["New York City", "Buffalo", "Albany", "Rochester"],
+      "correctIndex": 2,
+      "explanation": "Albany is New York's capital, not New York City. Albany has been the state capital since 1797 and is one of the oldest continuously chartered cities in the U.S."
+    },
+    {
+      "questionId": "q33",
+      "text": "What is the capital of North Carolina?",
+      "options": ["Charlotte", "Greensboro", "Durham", "Raleigh"],
+      "correctIndex": 3,
+      "explanation": "Raleigh is North Carolina's capital and part of the Research Triangle region. Charlotte is the state's largest city, but Raleigh has been the capital since 1792."
+    },
+    {
+      "questionId": "q34",
+      "text": "What is the capital of North Dakota?",
+      "options": ["Fargo", "Grand Forks", "Bismarck", "Minot"],
+      "correctIndex": 2,
+      "explanation": "Bismarck is North Dakota's capital, named after German Chancellor Otto von Bismarck to attract German investment in the railroad. Fargo is the state's largest city."
+    },
+    {
+      "questionId": "q35",
+      "text": "What is the capital of Ohio?",
+      "options": ["Cleveland", "Cincinnati", "Dayton", "Columbus"],
+      "correctIndex": 3,
+      "explanation": "Columbus is Ohio's capital and largest city. It was planned as a capital city and became the official capital in 1816, replacing Chillicothe."
+    },
+    {
+      "questionId": "q36",
+      "text": "What is the capital of Oklahoma?",
+      "options": ["Tulsa", "Oklahoma City", "Norman", "Broken Arrow"],
+      "correctIndex": 1,
+      "explanation": "Oklahoma City is Oklahoma's capital and largest city, one of the few U.S. states where the capital is also the most populous city. It was founded during the famous Land Run of 1889."
+    },
+    {
+      "questionId": "q37",
+      "text": "What is the capital of Oregon?",
+      "options": ["Portland", "Eugene", "Salem", "Bend"],
+      "correctIndex": 2,
+      "explanation": "Salem is Oregon's capital, located in the Willamette Valley. Portland is the state's largest city, but Salem has been the capital since 1851."
+    },
+    {
+      "questionId": "q38",
+      "text": "What is the capital of Pennsylvania?",
+      "options": ["Philadelphia", "Pittsburgh", "Harrisburg", "Allentown"],
+      "correctIndex": 2,
+      "explanation": "Harrisburg is Pennsylvania's capital, located on the Susquehanna River. Philadelphia is the state's largest city but Harrisburg has been the capital since 1812."
+    },
+    {
+      "questionId": "q39",
+      "text": "What is the capital of Rhode Island?",
+      "options": ["Providence", "Cranston", "Warwick", "Pawtucket"],
+      "correctIndex": 0,
+      "explanation": "Providence is Rhode Island's capital and largest city, founded by Roger Williams in 1636 as a place of religious tolerance. It served as one of the colonial capitals of America."
+    },
+    {
+      "questionId": "q40",
+      "text": "What is the capital of South Carolina?",
+      "options": ["Charleston", "Columbia", "Greenville", "Myrtle Beach"],
+      "correctIndex": 1,
+      "explanation": "Columbia is South Carolina's capital and largest city, located near the geographic center of the state. Charleston is historically significant but Columbia has been the capital since 1786."
+    },
+    {
+      "questionId": "q41",
+      "text": "What is the capital of South Dakota?",
+      "options": ["Sioux Falls", "Rapid City", "Pierre", "Aberdeen"],
+      "correctIndex": 2,
+      "explanation": "Pierre is South Dakota's capital and one of the least populous state capitals in the U.S. Sioux Falls is the state's largest city by far, but Pierre sits in the center of the state on the Missouri River."
+    },
+    {
+      "questionId": "q42",
+      "text": "What is the capital of Tennessee?",
+      "options": ["Memphis", "Nashville", "Knoxville", "Chattanooga"],
+      "correctIndex": 1,
+      "explanation": "Nashville is Tennessee's capital and largest city, and is world-famous as the home of country music. It has been the state capital since 1843."
+    },
+    {
+      "questionId": "q43",
+      "text": "What is the capital of Texas?",
+      "options": ["Houston", "Dallas", "San Antonio", "Austin"],
+      "correctIndex": 3,
+      "explanation": "Austin is Texas's capital, though Houston, San Antonio, and Dallas are all larger. Austin has been the capital since 1839, when Texas was still its own republic."
+    },
+    {
+      "questionId": "q44",
+      "text": "What is the capital of Utah?",
+      "options": ["Salt Lake City", "Provo", "West Valley City", "Ogden"],
+      "correctIndex": 0,
+      "explanation": "Salt Lake City is Utah's capital and largest city, founded in 1847 by Brigham Young and Mormon pioneers. It hosted the 2002 Winter Olympics."
+    },
+    {
+      "questionId": "q45",
+      "text": "What is the capital of Vermont?",
+      "options": ["Burlington", "Montpelier", "Rutland", "Essex"],
+      "correctIndex": 1,
+      "explanation": "Montpelier is Vermont's capital and, with a population under 10,000, it is the least populous state capital in the United States. Burlington is Vermont's largest city."
+    },
+    {
+      "questionId": "q46",
+      "text": "What is the capital of Virginia?",
+      "options": ["Virginia Beach", "Norfolk", "Richmond", "Chesapeake"],
+      "correctIndex": 2,
+      "explanation": "Richmond is Virginia's capital, located on the James River. It served as the capital of the Confederacy during the Civil War and has been Virginia's capital since 1780."
+    },
+    {
+      "questionId": "q47",
+      "text": "What is the capital of Washington State?",
+      "options": ["Seattle", "Spokane", "Tacoma", "Olympia"],
+      "correctIndex": 3,
+      "explanation": "Olympia is Washington's capital, located at the southern tip of Puget Sound. Seattle is by far the largest city, but Olympia has been the territorial and state capital since 1853."
+    },
+    {
+      "questionId": "q48",
+      "text": "What is the capital of West Virginia?",
+      "options": ["Huntington", "Charleston", "Morgantown", "Parkersburg"],
+      "correctIndex": 1,
+      "explanation": "Charleston is West Virginia's capital and largest city, located where the Elk River meets the Kanawha River. West Virginia separated from Virginia in 1863 during the Civil War."
+    },
+    {
+      "questionId": "q49",
+      "text": "What is the capital of Wisconsin?",
+      "options": ["Milwaukee", "Madison", "Green Bay", "Kenosha"],
+      "correctIndex": 1,
+      "explanation": "Madison is Wisconsin's capital and home to the University of Wisconsin. Milwaukee is the state's largest city, but Madison has been the capital since Wisconsin became a territory in 1836."
+    },
+    {
+      "questionId": "q50",
+      "text": "What is the capital of Wyoming?",
+      "options": ["Casper", "Laramie", "Cheyenne", "Gillette"],
+      "correctIndex": 2,
+      "explanation": "Cheyenne is Wyoming's capital and largest city, founded in 1867 as a Union Pacific Railroad town. It hosts Cheyenne Frontier Days, one of the largest outdoor rodeos in the world."
+    }
+  ]
+}

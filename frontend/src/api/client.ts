@@ -26,6 +26,7 @@ export interface QuizSummary {
   topic: string
   description: string
   questionCount: number
+  dateAdded: string
 }
 
 export interface Question {
@@ -45,31 +46,47 @@ export interface Quiz {
   questions: Question[]
 }
 
-const BASE_URL = (import.meta.env.VITE_API_BASE_URL as string | undefined) ?? 'http://localhost:5000'
-
-async function get<T>(path: string): Promise<T> {
-  const response = await fetch(`${BASE_URL}${path}`)
+async function fetchJson<T>(url: string): Promise<T> {
+  const response = await fetch(url)
   if (!response.ok) {
-    throw new Error(`API error: ${response.status} ${response.statusText}`)
+    throw new Error(`Fetch error: ${response.status} ${response.statusText}`)
   }
   return response.json() as Promise<T>
 }
 
-export async function postScore(payload: ScoreRequest): Promise<ScoreResponse> {
-  const res = await fetch(`${BASE_URL}/api/scores`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload)
-  })
-  if (!res.ok) throw new Error(`postScore failed: ${res.status}`)
-  return res.json()
-}
-
 export const api = {
   getQuizzes(): Promise<QuizSummary[]> {
-    return get<QuizSummary[]>('/api/quizzes')
+    return fetchJson<QuizSummary[]>('/quizzes/index.json')
   },
   getQuiz(id: string): Promise<Quiz> {
-    return get<Quiz>(`/api/quizzes/${id}`)
+    return fetchJson<Quiz>(`/quizzes/${id}.json`)
+  }
+}
+
+export function scoreQuiz(quiz: Quiz, answers: (number | null)[]): ScoreResponse {
+  const questionResults: QuestionResult[] = quiz.questions.map((q, i) => {
+    const selectedIndex = answers[i] ?? -1
+    const isCorrect = selectedIndex === q.correctIndex
+    return {
+      questionId: q.questionId,
+      selectedIndex,
+      correctIndex: q.correctIndex,
+      isCorrect,
+      explanation: q.explanation
+    }
+  })
+
+  const correctCount = questionResults.filter(r => r.isCorrect).length
+  const total = quiz.questions.length
+  const percentage = total > 0 ? Math.round((correctCount / total) * 1000) / 10 : 0
+  const passed = percentage >= 60
+
+  return {
+    quizId: quiz.quizId,
+    totalQuestions: total,
+    correctCount,
+    percentage,
+    passed,
+    questionResults
   }
 }

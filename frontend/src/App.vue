@@ -8,7 +8,7 @@ import { RouterView, RouterLink } from 'vue-router'
       <div class="header-inner">
         <RouterLink to="/" class="brand">
           <span class="brand-icon">🧠</span>
-          <span class="brand-name">QuizGame</span>
+          <span class="brand-name">Barret's Quiz Game</span>
         </RouterLink>
       </div>
     </header>

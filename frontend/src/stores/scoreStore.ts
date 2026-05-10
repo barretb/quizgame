@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import { postScore } from '@/api/client'
+import { scoreQuiz } from '@/api/client'
 import type { Quiz } from '@/api/client'
 import type { ScoreResponse } from '@/api/client'
+import { useScoreHistoryStore } from '@/stores/scoreHistoryStore'
 
 export const useScoreStore = defineStore('score', () => {
   const score = ref(0)
@@ -25,7 +26,7 @@ export const useScoreStore = defineStore('score', () => {
 
   const shareText = computed(
     () =>
-      `I scored ${score.value}/${total.value} on the "${quizTitle.value}" quiz! 🎯 Try it yourself at ${window.location.origin} #QuizGame`
+      `I scored ${score.value}/${total.value} on "${quizTitle.value}" in Barret's Quiz Game! 🎉\n#BarretsQuizGame #QuizGame`
   )
 
   function setResult(s: number, t: number, title: string, id: string) {
@@ -36,21 +37,23 @@ export const useScoreStore = defineStore('score', () => {
   }
 
   async function submitScore(quiz: Quiz, answers: (number | null)[]) {
-    const mappedAnswers = answers
-      .map((selectedIndex, i) =>
-        selectedIndex !== null
-          ? { questionId: quiz.questions[i].questionId, selectedIndex }
-          : null
-      )
-      .filter((a): a is { questionId: string; selectedIndex: number } => a !== null)
-
-    const response = await postScore({ quizId: quiz.quizId, answers: mappedAnswers })
+    const response = scoreQuiz(quiz, answers)
     scoreResponse.value = response
 
     score.value = response.correctCount
     total.value = response.totalQuestions
     quizTitle.value = quiz.title
     quizId.value = quiz.quizId
+
+    const scoreHistoryStore = useScoreHistoryStore()
+    scoreHistoryStore.addEntry({
+      quizId: quiz.quizId,
+      quizTitle: quiz.title,
+      percentage: response.percentage,
+      correctCount: response.correctCount,
+      totalQuestions: response.totalQuestions,
+      takenAt: new Date().toISOString()
+    })
   }
 
   function reset() {

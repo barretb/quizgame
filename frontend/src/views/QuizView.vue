@@ -12,7 +12,7 @@ import ProgressBar from '@/components/ProgressBar.vue'
 type AnswerState = 'default' | 'selected' | 'correct' | 'incorrect'
 
 const LABELS = ['A', 'B', 'C', 'D', 'E', 'F']
-const ADVANCE_DELAY_MS = 1500
+const ADVANCE_DELAY_MS = 3000
 
 const route = useRoute()
 const router = useRouter()
@@ -25,6 +25,7 @@ const submitting = ref(false)
 const runningScore = ref(0)
 const selectedIndex = ref<number | null>(null)
 const isAdvancing = ref(false)
+const advanceTimer = ref<ReturnType<typeof setTimeout> | null>(null)
 
 const currentQuestion = computed(() => quizStore.currentQuestion)
 const currentIndex = computed(() => quizStore.currentQuestionIndex)
@@ -38,19 +39,11 @@ function getOptionState(optionIndex: number): AnswerState {
   return 'default'
 }
 
-async function selectAnswer(optionIndex: number) {
-  if (selectedIndex.value !== null || isAdvancing.value) return
-
-  selectedIndex.value = optionIndex
-  quizStore.submitAnswer(optionIndex)
-
-  const correct = currentQuestion.value?.correctIndex
-  if (optionIndex === correct) {
-    runningScore.value++
+async function doAdvance() {
+  if (advanceTimer.value !== null) {
+    clearTimeout(advanceTimer.value)
+    advanceTimer.value = null
   }
-
-  isAdvancing.value = true
-  await new Promise<void>((resolve) => setTimeout(resolve, ADVANCE_DELAY_MS))
 
   if (quizStore.isLastQuestion) {
     submitting.value = true
@@ -70,12 +63,31 @@ async function selectAnswer(optionIndex: number) {
   }
 }
 
+async function selectAnswer(optionIndex: number) {
+  if (selectedIndex.value !== null || isAdvancing.value) return
+
+  selectedIndex.value = optionIndex
+  quizStore.submitAnswer(optionIndex)
+
+  const correct = currentQuestion.value?.correctIndex
+  if (optionIndex === correct) {
+    runningScore.value++
+  }
+
+  isAdvancing.value = true
+  advanceTimer.value = setTimeout(() => { doAdvance() }, ADVANCE_DELAY_MS)
+}
+
 onMounted(async () => {
   quizStore.reset()
   scoreStore.reset()
   runningScore.value = 0
   selectedIndex.value = null
   isAdvancing.value = false
+  if (advanceTimer.value !== null) {
+    clearTimeout(advanceTimer.value)
+    advanceTimer.value = null
+  }
 
   const id = route.params.id as string
   try {
@@ -142,6 +154,12 @@ onMounted(async () => {
             <span class="explanation-icon">💡</span>
             <p>{{ currentQuestion.explanation }}</p>
           </div>
+        </div>
+
+        <div v-if="selectedIndex !== null" class="next-btn-row">
+          <button class="btn-next" @click="doAdvance">
+            {{ quizStore.isLastQuestion ? 'See Results →' : 'Next Question →' }}
+          </button>
         </div>
       </div>
     </template>
@@ -260,5 +278,30 @@ onMounted(async () => {
 .btn-back {
   color: var(--color-primary);
   font-size: 0.9rem;
+}
+
+.next-btn-row {
+  margin-top: 1.5rem;
+  animation: fade-in 0.25s ease;
+}
+
+.btn-next {
+  display: block;
+  width: 100%;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  font-family: inherit;
+  background: linear-gradient(135deg, var(--color-primary), #a78bfa);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+.btn-next:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 </style>

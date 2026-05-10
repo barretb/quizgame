@@ -1,0 +1,290 @@
+{
+  "quizId": "software-development-languages-001",
+  "title": "Software Development Languages",
+  "topic": "Programming / Software Development",
+  "description": "Test your knowledge of programming languages, their origins, syntax, and ecosystems across 40 questions.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "Which language was created by Guido van Rossum?",
+      "options": ["Ruby", "Python", "Perl", "Go"],
+      "correctIndex": 1,
+      "explanation": "Python was created by Guido van Rossum and first released in 1991. Its name was inspired by the BBC comedy series Monty Python's Flying Circus."
+    },
+    {
+      "questionId": "q2",
+      "text": "JavaScript was originally developed at which company?",
+      "options": ["Microsoft", "Apple", "Netscape", "Sun Microsystems"],
+      "correctIndex": 2,
+      "explanation": "JavaScript was created by Brendan Eich at Netscape Communications in 1995. It was originally called Mocha, then LiveScript, before being renamed JavaScript."
+    },
+    {
+      "questionId": "q3",
+      "text": "What does JVM stand for?",
+      "options": ["Java Virtual Machine", "Java Variable Memory", "Joint Virtual Module", "Java Version Manager"],
+      "correctIndex": 0,
+      "explanation": "JVM stands for Java Virtual Machine. It is the runtime environment that executes Java bytecode, enabling Java's 'write once, run anywhere' philosophy."
+    },
+    {
+      "questionId": "q4",
+      "text": "Which language uses the .rs file extension?",
+      "options": ["R", "Rust", "Ruby", "Rails"],
+      "correctIndex": 1,
+      "explanation": "Rust source files use the .rs extension. Rust is a systems programming language focused on safety and performance, developed by Mozilla Research."
+    },
+    {
+      "questionId": "q5",
+      "text": "What language is TypeScript a superset of?",
+      "options": ["Java", "C#", "JavaScript", "CoffeeScript"],
+      "correctIndex": 2,
+      "explanation": "TypeScript is a superset of JavaScript developed by Microsoft. It adds optional static typing and compiles down to plain JavaScript."
+    },
+    {
+      "questionId": "q6",
+      "text": "Which language was developed by Apple for iOS/macOS development?",
+      "options": ["Objective-C", "Swift", "Kotlin", "Dart"],
+      "correctIndex": 1,
+      "explanation": "Swift was introduced by Apple in 2014 as a modern replacement for Objective-C. It is designed to be safe, fast, and expressive for Apple platforms."
+    },
+    {
+      "questionId": "q7",
+      "text": "What does HTML stand for?",
+      "options": ["HyperText Markup Language", "High Transfer Markup Language", "HyperText Machine Language", "HyperText Module Language"],
+      "correctIndex": 0,
+      "explanation": "HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and was created by Tim Berners-Lee in 1991."
+    },
+    {
+      "questionId": "q8",
+      "text": "Which language is primarily used for statistical computing?",
+      "options": ["Julia", "MATLAB", "R", "SAS"],
+      "correctIndex": 2,
+      "explanation": "R is a language and environment specifically designed for statistical computing and graphics. It is widely used among statisticians and data scientists."
+    },
+    {
+      "questionId": "q9",
+      "text": "What keyword is used to declare a variable in Go?",
+      "options": ["let", "var", "dim", "def"],
+      "correctIndex": 1,
+      "explanation": "In Go, the 'var' keyword is used for variable declarations. Go also supports the short variable declaration operator ':=' for implicit type inference."
+    },
+    {
+      "questionId": "q10",
+      "text": "Which language introduced the concept of 'nil' for null values?",
+      "options": ["Python", "Ruby", "Go", "Objective-C"],
+      "correctIndex": 3,
+      "explanation": "Objective-C uses 'nil' to represent a null pointer or the absence of an object. This concept was popularized in Smalltalk-descended languages."
+    },
+    {
+      "questionId": "q11",
+      "text": "What does SQL stand for?",
+      "options": ["Structured Query Language", "Simple Query Language", "Standard Query Logic", "Sequential Query Language"],
+      "correctIndex": 0,
+      "explanation": "SQL stands for Structured Query Language. It is the standard language for managing and querying relational databases, developed by IBM in the 1970s."
+    },
+    {
+      "questionId": "q12",
+      "text": "Which language uses indentation as part of its syntax?",
+      "options": ["Java", "C#", "Python", "JavaScript"],
+      "correctIndex": 2,
+      "explanation": "Python uses indentation (whitespace) to define code blocks, replacing the curly braces used by languages like Java and C#. This enforces readable code structure."
+    },
+    {
+      "questionId": "q13",
+      "text": "What is the file extension for a C# source file?",
+      "options": [".cs", ".cpp", ".c", ".csharp"],
+      "correctIndex": 0,
+      "explanation": "C# source files use the .cs extension. C# was developed by Microsoft as part of the .NET initiative and was first released in 2000."
+    },
+    {
+      "questionId": "q14",
+      "text": "Which language was designed by Bjarne Stroustrup?",
+      "options": ["C", "Java", "C++", "Rust"],
+      "correctIndex": 2,
+      "explanation": "C++ was designed by Bjarne Stroustrup starting in 1979 at Bell Labs. It extends C with object-oriented features while preserving C's performance characteristics."
+    },
+    {
+      "questionId": "q15",
+      "text": "What does PHP originally stand for?",
+      "options": ["Personal Home Page", "PHP Hypertext Preprocessor", "Preprocessed Hypertext Page", "Public Hosting Protocol"],
+      "correctIndex": 0,
+      "explanation": "PHP originally stood for Personal Home Page when Rasmus Lerdorf created it in 1994. It was later backronymed to PHP: Hypertext Preprocessor as the language grew."
+    },
+    {
+      "questionId": "q16",
+      "text": "Which language is Kotlin primarily used for?",
+      "options": ["Web development", "Data science", "Android development", "Game development"],
+      "correctIndex": 2,
+      "explanation": "Kotlin is primarily used for Android development. Google officially endorsed Kotlin as a first-class language for Android in 2017. It runs on the JVM and is fully interoperable with Java."
+    },
+    {
+      "questionId": "q17",
+      "text": "What does CSS stand for?",
+      "options": ["Cascading Style Sheets", "Computer Style Syntax", "Creative Style System", "Cascading Script Syntax"],
+      "correctIndex": 0,
+      "explanation": "CSS stands for Cascading Style Sheets. It is the language used to describe the presentation of HTML documents, controlling layout, colors, and fonts."
+    },
+    {
+      "questionId": "q18",
+      "text": "Which company developed the Go programming language?",
+      "options": ["Microsoft", "Apple", "Google", "Facebook"],
+      "correctIndex": 2,
+      "explanation": "Go (also known as Golang) was designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It was announced in 2009 and focused on simplicity and concurrency."
+    },
+    {
+      "questionId": "q19",
+      "text": "What is the correct file extension for a Java source file?",
+      "options": [".jv", ".java", ".ja", ".jav"],
+      "correctIndex": 1,
+      "explanation": "Java source files use the .java extension. The file name must match the public class name inside it. Java was created by James Gosling at Sun Microsystems in 1995."
+    },
+    {
+      "questionId": "q20",
+      "text": "Which language uses the 'fun' keyword to declare functions?",
+      "options": ["Swift", "Go", "Kotlin", "Dart"],
+      "correctIndex": 2,
+      "explanation": "Kotlin uses the 'fun' keyword to declare functions. For example: 'fun greet(name: String): String { return \"Hello, $name\" }'. This was a deliberate choice to make function declarations concise."
+    },
+    {
+      "questionId": "q21",
+      "text": "What does OOP stand for?",
+      "options": ["Object-Oriented Programming", "Open Object Protocol", "Ordered Output Processing", "Operational Object Pattern"],
+      "correctIndex": 0,
+      "explanation": "OOP stands for Object-Oriented Programming. It is a paradigm that organizes software design around data (objects) rather than functions and logic."
+    },
+    {
+      "questionId": "q22",
+      "text": "Which language is used to write React components?",
+      "options": ["Java", "TypeScript/JavaScript", "Python", "Ruby"],
+      "correctIndex": 1,
+      "explanation": "React components are written in JavaScript or TypeScript. React uses JSX/TSX syntax, a JavaScript extension that allows you to write HTML-like code within JavaScript."
+    },
+    {
+      "questionId": "q23",
+      "text": "What does LISP stand for?",
+      "options": ["List Processing", "Linear Instruction Set Programming", "Logical Interpreted Script Processor", "List Interpreter and Scripting Protocol"],
+      "correctIndex": 0,
+      "explanation": "LISP stands for List Processing. It was created by John McCarthy in 1958 and is one of the oldest high-level programming languages, known for its fully parenthesized prefix notation."
+    },
+    {
+      "questionId": "q24",
+      "text": "Which language is known as 'the mother of all languages'?",
+      "options": ["Fortran", "COBOL", "C", "Assembly"],
+      "correctIndex": 2,
+      "explanation": "C is often called the 'mother of all languages' because many modern languages (Java, C++, C#, JavaScript, Python, etc.) were heavily influenced by or derived from C."
+    },
+    {
+      "questionId": "q25",
+      "text": "What is Dart primarily associated with?",
+      "options": ["React Native", "Flutter", "Xamarin", "SwiftUI"],
+      "correctIndex": 1,
+      "explanation": "Dart is primarily associated with Flutter, Google's UI toolkit for building natively compiled applications. Flutter uses Dart as its programming language for cross-platform development."
+    },
+    {
+      "questionId": "q26",
+      "text": "Which of these is a compiled language?",
+      "options": ["Python", "JavaScript", "Ruby", "C++"],
+      "correctIndex": 3,
+      "explanation": "C++ is a compiled language — source code is translated directly to machine code by a compiler before execution. Python, JavaScript, and Ruby are interpreted or JIT-compiled at runtime."
+    },
+    {
+      "questionId": "q27",
+      "text": "What keyword does Rust use to define a function?",
+      "options": ["func", "function", "def", "fn"],
+      "correctIndex": 3,
+      "explanation": "Rust uses the 'fn' keyword to define functions. For example: 'fn main() { println!(\"Hello, world!\"); }'. The short keyword reflects Rust's design philosophy of conciseness."
+    },
+    {
+      "questionId": "q28",
+      "text": "Which language uses the => fat arrow syntax for lambdas?",
+      "options": ["Go", "Rust", "JavaScript", "Java 7"],
+      "correctIndex": 2,
+      "explanation": "JavaScript uses the => fat arrow syntax for arrow functions (lambdas), introduced in ES6 (2015). For example: 'const add = (a, b) => a + b;'. C# also uses =>, but JavaScript popularized it at mainstream scale."
+    },
+    {
+      "questionId": "q29",
+      "text": "What does API stand for?",
+      "options": ["Application Programming Interface", "Automated Process Integration", "Application Process Interface", "Automated Programming Interpreter"],
+      "correctIndex": 0,
+      "explanation": "API stands for Application Programming Interface. It defines rules and protocols for how software components interact and communicate with each other."
+    },
+    {
+      "questionId": "q30",
+      "text": "Which language was created at Bell Labs?",
+      "options": ["Python", "Java", "C", "Ruby"],
+      "correctIndex": 2,
+      "explanation": "The C programming language was created at Bell Labs by Dennis Ritchie between 1969 and 1973. It was developed alongside the Unix operating system and became extraordinarily influential."
+    },
+    {
+      "questionId": "q31",
+      "text": "What is the primary use of Bash?",
+      "options": ["Mobile development", "Data science", "Shell scripting", "Game development"],
+      "correctIndex": 2,
+      "explanation": "Bash (Bourne Again Shell) is primarily used for shell scripting and command-line automation on Unix-like systems. It is the default shell on most Linux distributions."
+    },
+    {
+      "questionId": "q32",
+      "text": "Which language is Elixir built on top of?",
+      "options": ["Ruby", "Erlang", "Haskell", "Scala"],
+      "correctIndex": 1,
+      "explanation": "Elixir runs on the Erlang Virtual Machine (BEAM). It was created by José Valim to bring Erlang's fault-tolerant, concurrent capabilities together with a more modern, Ruby-inspired syntax."
+    },
+    {
+      "questionId": "q33",
+      "text": "What does IDE stand for?",
+      "options": ["Integrated Development Environment", "Interactive Data Engine", "Interface Design Editor", "Integrated Debug Environment"],
+      "correctIndex": 0,
+      "explanation": "IDE stands for Integrated Development Environment. An IDE is a software application that provides comprehensive tools for software development, typically including a code editor, debugger, and build tools."
+    },
+    {
+      "questionId": "q34",
+      "text": "Which language uses .kt as its file extension?",
+      "options": ["Go", "Kotlin", "Kali", "Keras"],
+      "correctIndex": 1,
+      "explanation": "Kotlin source files use the .kt extension. Kotlin was developed by JetBrains and first appeared in 2011. It is named after Kotlin Island, near St. Petersburg, Russia."
+    },
+    {
+      "questionId": "q35",
+      "text": "What paradigm does Haskell follow?",
+      "options": ["Object-oriented", "Procedural", "Functional", "Event-driven"],
+      "correctIndex": 2,
+      "explanation": "Haskell is a purely functional programming language. It features strong static typing, lazy evaluation, and immutability by default. It was named after the logician Haskell Curry."
+    },
+    {
+      "questionId": "q36",
+      "text": "Which language is typically used for embedded systems programming?",
+      "options": ["Python", "Ruby", "C", "JavaScript"],
+      "correctIndex": 2,
+      "explanation": "C is the dominant language for embedded systems programming due to its low-level memory access, minimal runtime overhead, and direct hardware control. It is used in microcontrollers and firmware worldwide."
+    },
+    {
+      "questionId": "q37",
+      "text": "What does JSON stand for?",
+      "options": ["JavaScript Object Notation", "Java Serialized Object Notation", "JavaScript Ordered Nodes", "Joint Structured Object Notation"],
+      "correctIndex": 0,
+      "explanation": "JSON stands for JavaScript Object Notation. It is a lightweight data-interchange format that is easy for humans to read and write, and easy for machines to parse and generate."
+    },
+    {
+      "questionId": "q38",
+      "text": "Which language introduced async/await for asynchronous programming first at mainstream scale?",
+      "options": ["Python", "JavaScript", "C#", "Go"],
+      "correctIndex": 2,
+      "explanation": "C# introduced async/await in C# 5.0 (2012), becoming the first mainstream language to implement this pattern. It was later adopted by Python (3.5), JavaScript (ES2017), and others."
+    },
+    {
+      "questionId": "q39",
+      "text": "Which language is associated with the Django framework?",
+      "options": ["Ruby", "PHP", "Python", "Java"],
+      "correctIndex": 2,
+      "explanation": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It was created by Adrian Holovaty and Simon Willison and released in 2005."
+    },
+    {
+      "questionId": "q40",
+      "text": "What is the name of Rust's package manager?",
+      "options": ["npm", "pip", "Cargo", "gem"],
+      "correctIndex": 2,
+      "explanation": "Cargo is Rust's official package manager and build system. It handles downloading dependencies, compiling packages, and distributing libraries via crates.io, Rust's package registry."
+    }
+  ],
+  "dateAdded": "2026-05-09T00:00:00+00:00"
+}

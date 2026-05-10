@@ -1,0 +1,82 @@
+[
+  {
+    "quizId": "software-development-languages-001",
+    "title": "Software Development Languages",
+    "topic": "Programming / Software Development",
+    "description": "Test your knowledge of programming languages, their origins, syntax, and ecosystems across 40 questions.",
+    "questionCount": 40,
+    "dateAdded": "2026-05-08T20:00:00-04:00"
+  },
+  {
+    "quizId": "star-trek-trivia-001",
+    "title": "Star Trek: TV & Movies Trivia",
+    "topic": "Star Trek",
+    "description": "Boldly go where no quiz has gone before — test your knowledge of Star Trek's captains, species, ships, and iconic moments across all series and films.",
+    "questionCount": 30,
+    "dateAdded": "2026-05-08T20:00:00-04:00"
+  },
+  {
+    "quizId": "star-wars-trivia-001",
+    "title": "Star Wars: Movies & TV Trivia",
+    "topic": "Star Wars",
+    "description": "From the Skywalker Saga to The Mandalorian and beyond — put your Star Wars knowledge to the test across movies, animated shows, and live-action series.",
+    "questionCount": 30,
+    "dateAdded": "2026-05-08T20:00:00-04:00"
+  },
+  {
+    "quizId": "ohio-history-001",
+    "title": "Ohio History",
+    "topic": "US History",
+    "description": "Explore the rich history of the Buckeye State — from its founding to modern times.",
+    "questionCount": 20,
+    "dateAdded": "2025-06-01"
+  },
+  {
+    "quizId": "babylon5-trivia-001",
+    "title": "Babylon 5 Trivia",
+    "topic": "TV Shows",
+    "description": "The Babylon Project was our last, best hope for peace. Test your knowledge of this landmark sci-fi series.",
+    "questionCount": 30,
+    "dateAdded": "2025-05-09"
+  },
+  {
+    "quizId": "firefly-trivia-001",
+    "title": "Firefly Trivia",
+    "topic": "TV Shows",
+    "description": "You can't take the sky from me! Test your knowledge of the beloved Firefly verse.",
+    "questionCount": 20,
+    "dateAdded": "2025-05-01"
+  },
+  {
+    "quizId": "marvel-movies-001",
+    "title": "Marvel Movie Trivia",
+    "topic": "Movies",
+    "description": "How well do you know the Marvel Cinematic Universe? Test your knowledge of Earth's Mightiest Heroes.",
+    "questionCount": 20,
+    "dateAdded": "2025-04-15"
+  },
+  {
+    "quizId": "us-state-capitals-001",
+    "title": "US State Capitals",
+    "topic": "US Geography",
+    "description": "Can you name all 50 US state capitals? Test your knowledge of American geography.",
+    "questionCount": 50,
+    "dateAdded": "2025-03-10"
+  },
+  {
+    "quizId": "world-capitals-001",
+    "title": "World Capitals",
+    "topic": "Geography",
+    "description": "Test your knowledge of the world's capital cities across six continents.",
+    "questionCount": 30,
+    "dateAdded": "2025-01-20"
+  },
+  {
+    "quizId": "general-knowledge-001",
+    "title": "General Knowledge",
+    "topic": "General Knowledge",
+    "description": "A broad mix of science, history, art, and pop culture questions to challenge every trivia enthusiast.",
+    "questionCount": 10,
+    "dateAdded": "2024-03-14T20:00:00-04:00"
+  }
+]

@@ -1,0 +1,220 @@
+{
+  "quizId": "star-trek-trivia-001",
+  "title": "Star Trek: TV & Movies Trivia",
+  "topic": "Star Trek",
+  "description": "Boldly go where no quiz has gone before — test your knowledge of Star Trek's captains, species, ships, and iconic moments across all series and films.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What is the name of the ship in Star Trek: The Original Series?",
+      "options": ["USS Voyager", "USS Enterprise", "USS Discovery", "USS Defiant"],
+      "correctIndex": 1,
+      "explanation": "The USS Enterprise (NCC-1701) is the starship featured in The Original Series. It is a Constitution-class vessel under the command of Captain James T. Kirk, crewed by a diverse interstellar team."
+    },
+    {
+      "questionId": "q2",
+      "text": "Who is the captain of the USS Enterprise in The Original Series?",
+      "options": ["Jean-Luc Picard", "Benjamin Sisko", "James T. Kirk", "Kathryn Janeway"],
+      "correctIndex": 2,
+      "explanation": "Captain James Tiberius Kirk commands the USS Enterprise in The Original Series, played by William Shatner. He is known for his bold decision-making, charisma, and tendency to bend the rules."
+    },
+    {
+      "questionId": "q3",
+      "text": "What is Mr. Spock's home planet?",
+      "options": ["Earth", "Andor", "Vulcan", "Romulus"],
+      "correctIndex": 2,
+      "explanation": "Mr. Spock hails from Vulcan, a planet whose inhabitants are known for their strict devotion to logic and suppression of emotion. Spock is half-Vulcan, half-Human, which creates internal conflict throughout the series."
+    },
+    {
+      "questionId": "q4",
+      "text": "What does NCC-1701 represent?",
+      "options": ["The ship's registry number", "A Starfleet code", "A warp factor", "A battle stardate"],
+      "correctIndex": 0,
+      "explanation": "NCC-1701 is the registry number of the USS Enterprise. In Starfleet nomenclature, NCC indicates the ship class. The number was chosen by production designer Matt Jefferies and has become one of the most iconic designations in science fiction."
+    },
+    {
+      "questionId": "q5",
+      "text": "Who plays Captain Jean-Luc Picard?",
+      "options": ["William Shatner", "Patrick Stewart", "Avery Brooks", "Kate Mulgrew"],
+      "correctIndex": 1,
+      "explanation": "Sir Patrick Stewart portrays Captain Jean-Luc Picard in Star Trek: The Next Generation and the later series Star Trek: Picard. His portrayal is widely considered one of the finest in science fiction television."
+    },
+    {
+      "questionId": "q6",
+      "text": "What is the name of the holographic doctor in Star Trek: Voyager?",
+      "options": ["Data", "The Doctor", "Bashir", "Phlox"],
+      "correctIndex": 1,
+      "explanation": "The Emergency Medical Hologram (EMH) in Voyager is known simply as 'The Doctor,' played by Robert Picardo. He was originally a backup medical system but became a full crew member, developing a distinct personality."
+    },
+    {
+      "questionId": "q7",
+      "text": "What species is Worf?",
+      "options": ["Vulcan", "Romulan", "Klingon", "Cardassian"],
+      "correctIndex": 2,
+      "explanation": "Worf is a Klingon, played by Michael Dorn. He is the first Klingon to serve in Starfleet. Worf appeared in both The Next Generation and Deep Space Nine, making him one of the most recurring characters in Star Trek."
+    },
+    {
+      "questionId": "q8",
+      "text": "Deep Space Nine is primarily set on what type of installation?",
+      "options": ["A space station", "A starship", "A planet surface", "A colony"],
+      "correctIndex": 0,
+      "explanation": "Star Trek: Deep Space Nine is set aboard the space station DS9, originally a Cardassian mining station called Terok Nor orbiting the planet Bajor. Unlike most Trek shows, it has a fixed setting rather than a roaming starship."
+    },
+    {
+      "questionId": "q9",
+      "text": "Who is the Borg Queen's most famous assimilation target in TNG?",
+      "options": ["Worf", "Data", "Jean-Luc Picard", "Spock"],
+      "correctIndex": 2,
+      "explanation": "Jean-Luc Picard was assimilated by the Borg and designated Locutus of Borg in the TNG episode 'The Best of Both Worlds.' The trauma shaped Picard's character for the rest of the series and films."
+    },
+    {
+      "questionId": "q10",
+      "text": "What phrase do the Borg say when assimilating other species?",
+      "options": ["Resistance is futile", "You will comply", "Join us", "Surrender or die"],
+      "correctIndex": 0,
+      "explanation": "'Resistance is futile' is the Borg's most famous declaration, expressing their certainty that all species will be assimilated into their collective. The phrase has entered popular culture as a symbol of unstoppable force."
+    },
+    {
+      "questionId": "q11",
+      "text": "What is the Prime Directive?",
+      "options": ["A rule to always help aliens", "Non-interference with less advanced civilizations", "A Starfleet battle protocol", "A warp drive regulation"],
+      "correctIndex": 1,
+      "explanation": "The Prime Directive (General Order 1) prohibits Starfleet personnel from interfering with the natural development of alien civilizations, especially pre-warp societies. It is Starfleet's most important guiding principle."
+    },
+    {
+      "questionId": "q12",
+      "text": "Who is the first Klingon to serve in Starfleet in TNG?",
+      "options": ["Martok", "K'mpec", "Worf", "Gowron"],
+      "correctIndex": 2,
+      "explanation": "Worf, son of Mogh, is the first Klingon officer to serve in Starfleet. His unique position — raised by human foster parents after his family was killed at Khitomer — gives him a dual perspective on both cultures."
+    },
+    {
+      "questionId": "q13",
+      "text": "Which Star Trek series features Captain Benjamin Sisko?",
+      "options": ["TNG", "Voyager", "DS9", "Enterprise"],
+      "correctIndex": 2,
+      "explanation": "Captain Benjamin Sisko, played by Avery Brooks, commands Deep Space Nine in Star Trek: DS9. He is also revered by the Bajorans as the Emissary of the Prophets, a religious figure with great spiritual significance."
+    },
+    {
+      "questionId": "q14",
+      "text": "What is the name of Spock's father?",
+      "options": ["Surak", "Sybok", "Sarek", "Tuvok"],
+      "correctIndex": 2,
+      "explanation": "Sarek is Spock's Vulcan father and a distinguished Federation ambassador. He initially disapproved of Spock joining Starfleet instead of the Vulcan Science Academy. Sarek appears in multiple series and films."
+    },
+    {
+      "questionId": "q15",
+      "text": "Which movie features the death of Spock?",
+      "options": ["The Wrath of Khan", "The Search for Spock", "The Voyage Home", "The Undiscovered Country"],
+      "correctIndex": 0,
+      "explanation": "Spock dies at the end of Star Trek II: The Wrath of Khan (1982), sacrificing himself to save the Enterprise from the Genesis Device explosion. His final words are 'The needs of the many outweigh the needs of the few.'"
+    },
+    {
+      "questionId": "q16",
+      "text": "What ship does Captain Janeway command?",
+      "options": ["USS Enterprise", "USS Defiant", "USS Voyager", "USS Discovery"],
+      "correctIndex": 2,
+      "explanation": "Captain Kathryn Janeway commands the USS Voyager (NCC-74656), an Intrepid-class starship. After being stranded in the Delta Quadrant 70,000 light-years from Earth, she leads her crew on a 7-year journey home."
+    },
+    {
+      "questionId": "q17",
+      "text": "What is the species of the changeling character Odo in DS9?",
+      "options": ["Bajoran", "Cardassian", "Changeling", "Ferengi"],
+      "correctIndex": 2,
+      "explanation": "Odo is a Changeling (also called a Founder), a shapeshifting species from the Gamma Quadrant. He serves as DS9's Chief of Security and later discovers that the Founders are actually the leaders of the Dominion."
+    },
+    {
+      "questionId": "q18",
+      "text": "Which Star Trek series is set furthest in the future in canon?",
+      "options": ["Picard", "Discovery (32nd century)", "Voyager", "Strange New Worlds"],
+      "correctIndex": 1,
+      "explanation": "Star Trek: Discovery is set furthest in the future after the crew travels to the 32nd century (year 3188). Most other series are set in the 23rd or 24th century."
+    },
+    {
+      "questionId": "q19",
+      "text": "Who plays Data in Star Trek: The Next Generation?",
+      "options": ["Brent Spiner", "LeVar Burton", "Michael Dorn", "Jonathan Frakes"],
+      "correctIndex": 0,
+      "explanation": "Brent Spiner plays Lieutenant Commander Data, an android who serves as the Enterprise's operations officer. Data strives to understand human nature and emotion throughout TNG and the subsequent films."
+    },
+    {
+      "questionId": "q20",
+      "text": "What are the Ferengi's guiding business principles called?",
+      "options": ["The Ferengi Bible", "Rules of Acquisition", "Laws of Commerce", "The Grand Nagus Code"],
+      "correctIndex": 1,
+      "explanation": "The Rules of Acquisition are the Ferengi's sacred set of guiding principles for commerce. There are 285 rules, the first being 'Once you have their money, you never give it back.' They are treated with near-religious reverence."
+    },
+    {
+      "questionId": "q21",
+      "text": "In Star Trek (2009), who plays the young Spock?",
+      "options": ["Zachary Quinto", "Chris Pine", "Karl Urban", "Zoe Saldana"],
+      "correctIndex": 0,
+      "explanation": "Zachary Quinto plays the young Spock in J.J. Abrams' 2009 Star Trek reboot and its sequels. The original Spock, Leonard Nimoy, also appeared in the film as 'Spock Prime' from an alternate timeline."
+    },
+    {
+      "questionId": "q22",
+      "text": "What is the Discovery's special propulsion system in season 1?",
+      "options": ["Transwarp", "Spore drive", "Quantum slipstream", "Warp 10"],
+      "correctIndex": 1,
+      "explanation": "The USS Discovery uses a spore drive (mycelial network drive) that allows instantaneous travel to any point in the universe by navigating the mycelial network. Lt. Paul Stamets serves as its human navigator."
+    },
+    {
+      "questionId": "q23",
+      "text": "Who is the main character in Star Trek: Strange New Worlds?",
+      "options": ["James T. Kirk", "Spock", "Christopher Pike", "Una Chin-Riley"],
+      "correctIndex": 2,
+      "explanation": "Captain Christopher Pike commands the USS Enterprise in Strange New Worlds. The series, set before The Original Series, follows Pike's exploratory missions. He is played by Anson Mount, who reprised the role from Discovery."
+    },
+    {
+      "questionId": "q24",
+      "text": "What does LCARS stand for?",
+      "options": ["Library Computer Access/Retrieval System", "Long Command and Relay System", "Light Computer Automated Response System", "Library Command Architecture Research System"],
+      "correctIndex": 0,
+      "explanation": "LCARS stands for Library Computer Access/Retrieval System. It is the graphical interface used on starships and stations in the 24th century. The distinctive orange-and-black design was created by Michael Okuda for TNG."
+    },
+    {
+      "questionId": "q25",
+      "text": "In which movie do the Enterprise crew travel back to 1986 San Francisco?",
+      "options": ["The Wrath of Khan", "The Search for Spock", "The Voyage Home", "The Final Frontier"],
+      "correctIndex": 2,
+      "explanation": "Star Trek IV: The Voyage Home (1986) features the crew traveling back to 1986 San Francisco to retrieve humpback whales whose song can communicate with an alien probe threatening Earth in the 23rd century."
+    },
+    {
+      "questionId": "q26",
+      "text": "What species are Counselor Troi's people?",
+      "options": ["Vulcan", "Betazoid", "Rigelian", "Trill"],
+      "correctIndex": 1,
+      "explanation": "Deanna Troi is half-Betazoid, half-Human. Betazoids are known for their telepathic and empathic abilities. As ship's counselor, Troi uses her empathy to sense the emotions of those around her."
+    },
+    {
+      "questionId": "q27",
+      "text": "Who plays Captain Archer in Star Trek: Enterprise?",
+      "options": ["Scott Bakula", "Avery Brooks", "Patrick Stewart", "Kate Mulgrew"],
+      "correctIndex": 0,
+      "explanation": "Scott Bakula plays Captain Jonathan Archer in Star Trek: Enterprise (2001–2005). Enterprise is set in the 22nd century, before the founding of the Federation, and follows humanity's first deep space exploration."
+    },
+    {
+      "questionId": "q28",
+      "text": "In Star Trek: Picard, what android character (played by Brent Spiner) is central to the story?",
+      "options": ["Lore", "Data", "B-4", "Altan Soong"],
+      "correctIndex": 1,
+      "explanation": "Data's consciousness and legacy are central to Star Trek: Picard. Though Data died in Nemesis, his mind was preserved in a golem android. Brent Spiner plays multiple Soong-type androids across the series."
+    },
+    {
+      "questionId": "q29",
+      "text": "In Star Trek: Lower Decks, what ship do the main characters serve on?",
+      "options": ["USS Enterprise", "USS Voyager", "USS Cerritos", "USS Titan"],
+      "correctIndex": 2,
+      "explanation": "The USS Cerritos (NCC-75567) is the California-class starship featured in Lower Decks. Unlike other Trek ships, it specializes in 'second contact' missions — the less glamorous follow-up work after first contact is made."
+    },
+    {
+      "questionId": "q30",
+      "text": "What does 'Qapla\\'' mean in Klingon?",
+      "options": ["Die with honor", "Success!", "Victory", "Live long and prosper"],
+      "correctIndex": 1,
+      "explanation": "'Qapla\\'' means 'Success!' in Klingon. It is the most common Klingon farewell, used instead of goodbye. The Klingon language was developed by linguist Marc Okrand for Star Trek III: The Search for Spock."
+    }
+  ],
+  "dateAdded": "2026-05-09T00:00:00+00:00"
+}
