@@ -6,3 +6,7 @@
 .squad/.scratch/
 # Squad: SubSquad activation file (local to this machine)
 .squad-workstream
+
+# Frontend dependencies and build artifacts
+frontend/node_modules/
+frontend/dist/

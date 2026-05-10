@@ -42,6 +42,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "./frontend" # App source code path
           api_location: "" # Api source code path - optional
+          app_build_command: "rm -rf node_modules && npm ci && npm run build" # Ensure Linux executables are recreated
           output_location: "dist" # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
