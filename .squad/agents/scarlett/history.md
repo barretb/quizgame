@@ -12,8 +12,26 @@ Key UI concerns: quiz selection screen, question/answer flow, score tracker, res
 Stack TBD — to be determined with Barret.
 
 ## Learnings
+
+### 2026-05-10T09:36:06 — Frontend-Only Migration (Backend Removed)
 
-### 2026-05-09T21:00:15 — POST /api/scores Wired End-to-End
+**Task:** Remove .NET backend dependency. Serve quiz data as static JSON files from frontend/public, score locally.
+
+**Actions:**
+- Copied 10 quiz JSON files from `backend/QuizGame.Api/Data/Quizzes/` → `frontend/public/quizzes/`
+- Created `frontend/public/quizzes/index.json` — static manifest of all quiz summaries, sorted dateAdded desc; validated quizId==filename and >=10 questions (all 10 passed)
+- Rewrote `frontend/src/api/client.ts`: removed `BASE_URL`, `get()`, `postScore()`; added `fetchJson()` hitting `/quizzes/*.json`; added pure `scoreQuiz(quiz, answers)` function that ports backend `POST /api/scores` scoring logic exactly (percentage formula: `Math.round((correctCount/total)*1000)/10`, passed ≥ 60%)
+- Updated `frontend/src/stores/scoreStore.ts`: replaced `postScore` import with `scoreQuiz`; `submitScore` now synchronous internally (still `async` to preserve QuizView.vue call signature)
+- Commented out `VITE_API_BASE_URL` in `.env`, `.env.example`, `.env.local`
+
+**Findings:**
+- `scoreQuiz` maps all questions including skipped (selectedIndex -1) unlike the old backend which filtered nulls — more complete question review data in ResultsView
+- Build clean: 66 modules, 667ms ✅ (one extra module vs previous — scoreStore now separate chunk)
+- QuizView.vue needed no changes (submitScore still async)
+- ResultsView.vue needed no changes (scoreResponse shape unchanged)
+
+**Reported to:** `.squad/decisions/inbox/scarlett-frontend-only-migration.md`
+
 
 **Task:** Wire `POST /api/scores` into the quiz completion flow.
 
@@ -115,6 +133,23 @@ Stack TBD — to be determined with Barret.
 - GET /api/quizzes → HomeView list
 - GET /api/quizzes/{id} → QuizView bootstrap
 - Base URL from import.meta.env.VITE_API_BASE_URL
+
+### 2026-05-10T09:36:06 — Frontend-Only Migration (Backend Removed)
+
+**Task:** Remove .NET backend dependency. Serve quiz data as static JSON files from frontend/public, score locally.
+
+**Actions:**
+- Copied 10 quiz JSON files from `backend/QuizGame.Api/Data/Quizzes/` → `frontend/public/quizzes/`
+- Created `frontend/public/quizzes/index.json` — static manifest of all quiz summaries, sorted dateAdded desc; validated quizId==filename and >=10 questions (all 10 passed)
+- Rewrote `frontend/src/api/client.ts`: removed `BASE_URL`, `get()`, `postScore()`; added `fetchJson()` hitting `/quizzes/*.json`; added pure `scoreQuiz(quiz, answers)` function that ports backend `POST /api/scores` scoring logic exactly (percentage formula: `Math.round((correctCount/total)*1000)/10`, passed ≥ 60%)
+- Updated `frontend/src/stores/scoreStore.ts`: replaced `postScore` import with `scoreQuiz`; `submitScore` now synchronous internally (still `async` to preserve QuizView.vue call signature)
+- Commented out `VITE_API_BASE_URL` in `.env`, `.env.example`, `.env.local`
+
+**Findings:**
+- `scoreQuiz` maps all questions including skipped (selectedIndex -1) unlike the old backend which filtered nulls — more complete question review data in ResultsView
+- Build clean: 66 modules, 667ms ✅ (one extra module vs previous — scoreStore now separate chunk)
+- QuizView.vue needed no changes (submitScore still async)
+- ResultsView.vue needed no changes (scoreResponse shape unchanged)
 
 ---
 

@@ -13,6 +13,47 @@ Stack TBD — to be determined with Barret.
 
 ## Learnings
 
+### 2026-05-10T09:36:06 — Test migration: frontend-only architecture (Phase 2)
+
+**Requested by:** Barret (Scarlett simultaneously migrating backend)
+
+**Scope:** Update all frontend tests for new local scoreQuiz() function and frontend-only architecture.
+
+#### Test files created/updated
+- **scoreQuiz.test.ts** (14 tests — all pass)
+  - Pure function tests: no Pinia setup, direct import and call
+  - Precision: `Math.round((correctCount / total) * 1000) / 10` formula verified with boundary tests (1/3 → 33.3, 2/3 → 66.7)
+  - Null handling: `answers[i] ?? -1` converts null to -1 selectedIndex
+  - 60% pass threshold inclusive: `percentage >= 60` → `passed: true`
+  - Edge cases: 10 questions minimum, 100% score, 0% score
+
+- **scoreStore.test.ts** (20 tests — all pass)
+  - Since `scoreQuiz` is now pure synchronous, no HTTP mocking needed
+  - `percentage` in store is unrounded `(score / total) * 100`, distinct from `scoreResponse.percentage` (rounded 1 decimal)
+  - `stars` computed uses unrounded percentage, no floating-point surprises
+  - `setActivePinia(createPinia())` in beforeEach + cookie cleanup required (scoreHistoryStore persists to jsdom cookie)
+
+- **quizStore.test.ts** (22 tests — all pass)
+  - Action names verified: `submitAnswer`, `advance`, `reset` (match implementation, not old stubs)
+  - `advance()` clamps at isLastQuestion — does not increment past last question
+  - `submitAnswer` idempotent: guards with hasAnswered check
+  - Rewrote 6 stubs with 22 tests covering computed properties
+
+#### Bug fixed
+- Pre-existing: `scoreHistoryStore.ts` MAX_ENTRIES = 100 (tests contracted 20); changed to 20
+
+#### Coordination
+- Scarlett had already migrated API when Peacock ran tests — seamless handoff
+- No component changes needed (QuizView.vue, ResultsView.vue, api contract preserved)
+- Backend tests flagged for removal (no longer needed in frontend-only model)
+
+#### Result
+- **95/100 tests passing** ✅
+- **5 intentional stubs** remain (future feature placeholders)
+- Build: 66 modules, 667ms, exit 0 ✅
+
+---
+
 ### 2026-05-09 — Test infrastructure compile fixes
 
 **Backend (xUnit):**
@@ -57,7 +98,40 @@ Stack TBD — to be determined with Barret.
 **Cross-agent notes for Scarlett:** tsconfig.json excludes src/__tests__/** from build. Peacock needs separate tsconfig.test.json or vitest config to include test file types. Frontend build succeeds with test exclusion.
 
 
-## [2026-05-09 21:02 UTC] Team Coordination
+## Learnings
+
+### 2026-05-10 — Test migration: frontend-only architecture
+
+**Requested by:** Barret (Scarlett simultaneously migrating)
+
+#### Migration findings
+- Scarlett had already updated `client.ts` (removed `postScore`, added `scoreQuiz` pure function; changed `api.getQuiz` to fetch from `/quizzes/${id}.json` static path) and `scoreStore.ts` (calls `scoreQuiz` instead of `postScore`, `submitScore` is now sync internally but stays async externally) before Peacock ran tests. Coordination was seamless.
+- Pre-existing `MAX_ENTRIES = 100` bug found in `scoreHistoryStore.ts` — tests contracted 20 entries, store was capping at 100. Fixed to 20.
+
+#### scoreQuiz.test.ts (14 tests — all pass)
+- Pure function: no Pinia setup needed, just direct import and call.
+- Precision formula in implementation: `Math.round((correctCount / total) * 1000) / 10` produces correct 1-decimal rounding (1/3 → 33.3, 2/3 → 66.7).
+- Null answers: `answers[i] ?? -1` pattern in implementation correctly converts null to -1 selectedIndex.
+- 60% pass threshold is inclusive: `percentage >= 60` → `passed: true`.
+
+#### scoreStore.test.ts (20 tests — all pass)
+- Since `scoreQuiz` is now a pure synchronous function, `submitScore` can be called without any HTTP mocking — just call through with real quiz data.
+- `percentage` in the store is `(score / total) * 100` (unrounded), distinct from `scoreResponse.percentage` (rounded to 1 decimal). Tests use round fractions (multiples of 10) so both agree.
+- `stars` computed uses unrounded `percentage.value`, so no floating-point surprises with 10-question quizzes.
+- `setActivePinia(createPinia())` in `beforeEach` plus cookie cleanup needed because `scoreHistoryStore` persists to jsdom cookie.
+
+#### quizStore.test.ts (22 tests — all pass)
+- Actual action names differ from stubs: `submitAnswer` (not `recordAnswer`), `advance` (not `nextQuestion`), `reset` (not `resetQuiz`).
+- `advance()` clamps at `isLastQuestion` — does not increment past last question index.
+- `submitAnswer` is idempotent once an answer is recorded for that index (guards with `hasAnswered` check).
+- Replaced 6 stubs with 22 tests covering computed properties too.
+
+#### Files created/modified
+- Created: `frontend/src/__tests__/scoreQuiz.test.ts`
+- Rewrote: `frontend/src/__tests__/scoreStore.test.ts`
+- Rewrote: `frontend/src/__tests__/quizStore.test.ts`
+- Fixed: `frontend/src/stores/scoreHistoryStore.ts` (MAX_ENTRIES 100→20)
+- Decision inbox: `.squad/decisions/inbox/peacock-test-migration.md`
 - Inbox decision from peacock-1 merged to decisions.md
 - Orchestration log recorded for peacock-1 execution
 - Session log created for test infrastructure work
