@@ -112,6 +112,41 @@
 **What:** (1) Auto-advance set to 1500ms (extended 300ms for explanation reading). (2) Explanation text shown immediately after answer (UX bonus). (3) Three-star rating system (0-39%→0, 40-59%→1, 60-79%→2, 80-100%→3). (4) src/env.d.ts added for Vite import.meta.env types. (5) tsconfig.json excludes src/__tests__/** from build. (6) Dark theme with CSS custom properties (dark #0f0f1a, purple primary #6c63ff, success/error colors).
 **Why:** 1500ms delay supports learning retention with explanations. Three-star system aligns with spec. Env types prevent TS errors. Excluded test files allow build success. Dark theme creates energetic but polished quiz experience. Bridge to Peacock: needs tsconfig.test.json or vitest types for test files.
 
+### 2026-05-09T21:31:38: Quiz Content Batch 1 (Mr. Green)
+**By:** Mr. Green
+**What:** Created three quiz JSON files: world-capitals-001 (30 questions, expanded), us-state-capitals-001 (50 questions), ohio-history-001 (20 questions). All validated with 10-question minimum and proper schema compliance.
+**Why:** Barret requested quiz content batch to populate QuizGame library with substantive, factually accurate data (100 total new questions).
+
+### 2026-05-09T21:37:34: Quiz Content Batch 3 (Mr. Green)
+**By:** Mr. Green
+**What:** Added three new quiz JSON files: software-development-languages-001 (40 questions), star-wars-trivia-001 (30 questions), star-trek-trivia-001 (30 questions).
+**Why:** Continue expanding quiz library with user-requested content categories.
+
+### 2026-05-09T21:37:34: App URL in Social Share (Miss Scarlett)
+**By:** Miss Scarlett
+**What:** Added configurable app URL to social share feature. Created `VITE_APP_URL` env var, updated ShareModal to include "Play at:" link in shared posts.
+**Why:** Shared posts without a link leave recipients unable to find the game. Configurable URL supports deployments without code changes.
+
+### 2026-05-09T21:48:53: Quiz UX Improvements (Miss Scarlett)
+**By:** Miss Scarlett
+**What:** Three UX changes: (1) Score history cap raised 20→100, (2) Auto-advance delay 1500ms→3000ms, (3) Added manual "Next Question→" / "See Results→" button after answer.
+**Why:** Barret requested changes. Longer delay supports learning retention with explanation visible; manual button removes forced waiting.
+
+### 2026-05-10T09:36:06: Test Migration — Frontend-Only Architecture (Peacock)
+**By:** Mrs. Peacock
+**What:** Updated all frontend tests (scoreQuiz.test.ts, scoreStore.test.ts, quizStore.test.ts, scoreHistoryStore.test.ts) to cover new architecture with client-side scoring. 95/100 tests passing (5 intentional AnswerOption stubs pending component implementation). Fixed MAX_ENTRIES bug (was 100, spec requires 20).
+**Why:** Backend removal required test rewrite to cover pure client-side functions and store state.
+
+### 2026-05-10T09:36:06: Backend Removed — Frontend-Only SPA (Miss Scarlett)
+**By:** Miss Scarlett
+**What:** Removed .NET backend API dependency. Migrated to fully self-contained static SPA: (1) 10 quiz JSON files copied to frontend/public/quizzes/, (2) New static manifest index.json, (3) Rewrote client.ts: no backend calls, new scoreQuiz() pure function, (4) Commented out VITE_API_BASE_URL env vars. Updated scoreStore to call scoreQuiz() instead of postScore().
+**Why:** Barret requested backend removal to simplify deployment. App becomes pure static site with no server-side dependencies. Quiz data immutable at runtime.
+
+### ADR Updates (Miss Scarlett, 2026-05-10T09:36:06)
+- **ADR-001 amended:** Backend API removed. Frontend is now fully static SPA.
+- **ADR-002 amended:** Quiz JSON files now served from frontend/public/quizzes/ instead of backend service.
+- **ADR-003 amended:** POST /api/scores removed; scoring entirely local via scoreQuiz().
+
 ## Governance
 
 - All meaningful changes require team consensus

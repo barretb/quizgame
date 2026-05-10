@@ -127,6 +127,24 @@ Stack TBD — to be determined with Barret.
 
 ---
 
+### 2026-05-09T21:31:38 — Quiz Content Batch 1: Three Quiz Files Created/Expanded
+
+**Files authored:**
+- `world-capitals-001.json` — expanded from 10 → 30 questions (added q11–q30 covering Nigeria, Saudi Arabia, Kazakhstan, Fiji, Morocco, Jamaica, Turkey, Kenya, Germany, New Zealand, Thailand, Pakistan, China, Ghana, Cuba, UAE, Peru, Philippines, Uzbekistan, Ethiopia)
+- `us-state-capitals-001.json` — new file, all 50 US states covered with trick answers (NY→Albany not NYC, CA→Sacramento not LA, FL→Tallahassee not Miami, etc.)
+- `ohio-history-001.json` — new file, 20 questions spanning Native American history through modern era (Wright Brothers, Neil Armstrong, 8 presidents, Erie Canal, Rock Hall, etc.)
+
+**Schema compliance:** All files validated with `ConvertFrom-Json`. All questions have exactly 4 options, sequential questionIds (q1–qN), correctIndex 0–3, varied answer positions, and 1–2 sentence explanations.
+
+**Factual accuracy notes:**
+- Astana is Kazakhstan's current capital (was Nur-Sultan 2019–2022, reverted)
+- Ohio has 8 presidents associated with it (7 born there + William Henry Harrison who lived there)
+- Marietta (1788) = first permanent American settlement in the Northwest Territory
+- Chillicothe = Ohio's first capital, not Columbus
+- Wright Brothers' shop in Dayton; first flight at Kitty Hawk, NC (1903)
+
+---
+
 ### 2026-05-09T21:00:15 — Squad Orchestration: Frontend Integration Complete
 
 **Status:** ✅ Integration milestone reached
@@ -139,3 +157,30 @@ Stack TBD — to be determined with Barret.
 - Per-question correctness details in `questionResults[]`
 
 **Team status:** All backend endpoints now actively consumed by frontend. Ready for end-to-end testing.
+
+---
+
+### 2026-05-10T09:36:06 — Backend Permanently Removed (Coordinator)
+
+**Decision by:** Barret (via Coordinator)
+
+**What:** Backend directory deleted entirely per explicit request.
+
+**Status:** ✅ COMPLETE
+
+The .NET Core 10 API backend has been permanently removed from the repository. All backend responsibilities have been migrated to the frontend:
+
+- **Quiz data:** Now served statically from `frontend/public/quizzes/`
+- **Quiz manifest:** Static `index.json` generated from 10 validated quizzes
+- **Scoring:** Migrated to pure client-side function `scoreQuiz(quiz, answers)` in `client.ts`
+- **API endpoints:** No longer needed; all data fetches read static JSON files
+
+**Reason:** Simplify deployment. Quiz data is immutable; no server-side logic required.
+
+**Impact on Green's work:**
+- All backend scaffolding (Program.cs, QuizService, IScoreRepository, etc.) archived/deleted
+- Quiz files remain in the project (copied to frontend/public)
+- No ongoing backend maintenance or server operation required
+
+**New Architecture:** Frontend-only SPA serving static quiz content with client-side scoring.
+
