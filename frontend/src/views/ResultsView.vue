@@ -56,6 +56,10 @@ function playAgain() {
         </p>
       </div>
 
+      <div v-if="scoreStore.scoreResponse" class="passed-badge" :class="scoreStore.scoreResponse.passed ? 'passed' : 'failed'">
+        {{ scoreStore.scoreResponse.passed ? '✅ Passed' : '❌ Try Again' }}
+      </div>
+
       <div class="results-actions">
         <button class="btn-share" @click="showShareModal = true">
           📤 Share Score
@@ -72,6 +76,26 @@ function playAgain() {
       :share-text="scoreStore.shareText"
       @close="showShareModal = false"
     />
+
+    <div v-if="scoreStore.scoreResponse" class="question-review">
+      <h2 class="review-title">Question Review</h2>
+      <div
+        v-for="(result, i) in scoreStore.scoreResponse.questionResults"
+        :key="result.questionId"
+        class="review-item"
+        :class="result.isCorrect ? 'review-correct' : 'review-incorrect'"
+      >
+        <div class="review-header">
+          <span class="review-num">Q{{ i + 1 }}</span>
+          <span class="review-status">{{ result.isCorrect ? '✅ Correct' : '❌ Incorrect' }}</span>
+        </div>
+        <div v-if="!result.isCorrect" class="review-detail">
+          <span>Your answer: option {{ result.selectedIndex + 1 }}</span>
+          <span>Correct: option {{ result.correctIndex + 1 }}</span>
+        </div>
+        <p class="review-explanation">{{ result.explanation }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -229,5 +253,85 @@ function playAgain() {
   background: transparent;
   color: var(--color-text-muted);
   border: 1px solid var(--color-border);
+}
+
+.passed-badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.passed-badge.passed {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.passed-badge.failed {
+  background: rgba(239, 68, 68, 0.12);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.question-review {
+  max-width: 500px;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.review-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.review-item {
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid;
+}
+
+.review-correct {
+  background: rgba(34, 197, 94, 0.07);
+  border-color: #4ade80;
+}
+
+.review-incorrect {
+  background: rgba(239, 68, 68, 0.07);
+  border-color: #f87171;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.review-num {
+  color: var(--color-text-muted);
+}
+
+.review-detail {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.review-explanation {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin: 0;
 }
 </style>

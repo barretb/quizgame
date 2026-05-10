@@ -21,6 +21,7 @@ const scoreStore = useScoreStore()
 
 const loading = ref(true)
 const error = ref<string | null>(null)
+const submitting = ref(false)
 const runningScore = ref(0)
 const selectedIndex = ref<number | null>(null)
 const isAdvancing = ref(false)
@@ -52,12 +53,15 @@ async function selectAnswer(optionIndex: number) {
   await new Promise<void>((resolve) => setTimeout(resolve, ADVANCE_DELAY_MS))
 
   if (quizStore.isLastQuestion) {
-    scoreStore.setResult(
-      runningScore.value,
-      totalQuestions.value,
-      quizStore.quiz?.title ?? '',
-      quizStore.quiz?.quizId ?? ''
-    )
+    submitting.value = true
+    try {
+      await scoreStore.submitScore(quizStore.quiz!, quizStore.answers)
+    } catch (e) {
+      error.value = e instanceof Error ? e.message : 'Failed to submit score'
+      submitting.value = false
+      isAdvancing.value = false
+      return
+    }
     router.push({ name: 'results', params: { id: quizStore.quiz?.quizId } })
   } else {
     quizStore.advance()
@@ -90,6 +94,11 @@ onMounted(async () => {
     <div v-if="loading" class="state-loading">
       <div class="spinner" />
       <p>Loading quiz…</p>
+    </div>
+
+    <div v-else-if="submitting" class="state-loading">
+      <div class="spinner" />
+      <p>Submitting…</p>
     </div>
 
     <div v-else-if="error" class="state-error">
