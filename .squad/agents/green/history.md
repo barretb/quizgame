@@ -66,3 +66,76 @@ Stack TBD — to be determined with Barret.
 - `Question` C# record MUST include `int CorrectOptionIndex` (confirmed in backend design)
 - `POST /api/scores` endpoint still validates scores server-side for audit (client sends selected answers, backend recalculates)
 - No change to `ScoreSubmission` or `ScoreResult` contracts
+
+---
+
+### 2026-05-09T20:45:11 — Backend Scaffold Completed
+
+**What was built:** Full .NET Core 10 Minimal API backend at `C:\projects\quizgame\backend\QuizGame.Api\`.
+
+**Key file paths:**
+- `Program.cs` — all endpoints wired up (minimal API style)
+- `Models/Quiz.cs`, `Question.cs`, `QuizSummary.cs`, `ScoreRequest.cs`, `ScoreResult.cs`, `QuestionResult.cs`, `ScoreRecord.cs`
+- `Services/IQuizService.cs`, `Services/QuizService.cs` — file-based loader with IMemoryCache (1hr expiry)
+- `Repositories/IScoreRepository.cs`, `Repositories/InMemoryScoreRepository.cs` — ConcurrentDictionary<Guid, ScoreRecord>
+- `Data/Quizzes/world-capitals-001.json` — 10 real world capitals questions
+- `Data/Quizzes/general-knowledge-001.json` — 10 general knowledge questions
+- `appsettings.json` — AllowedOrigins: ["http://localhost:5173"]
+- `Properties/launchSettings.json` — port 5000 (HTTP), 5001 (HTTPS)
+
+**Binding contract implemented:**
+- Quiz JSON schema: `quizId`, `title`, `topic`, `description`, `version`, `questions[]` with `questionId`, `text`, `options[]`, `correctIndex`, `explanation`
+- Filename rule: `{quizId}.json` must match internal `quizId` field — enforced at load time
+- Min 10 questions enforced by QuizService (skips non-compliant files with log warning)
+- All responses use camelCase (System.Text.Json `PropertyNamingPolicy.CamelCase`)
+
+**Endpoints verified (smoke tested):**
+- `GET /health` → `{ status: "healthy", timestamp: "..." }` ✅
+- `GET /api/quizzes` → list of 2 QuizSummary objects, no questions array ✅
+- `GET /api/quizzes/{id}` → full Quiz with `correctIndex` in every question ✅
+- `POST /api/scores` → calculates score server-side, returns ScoreResult ✅
+
+**OpenAPI:** `Microsoft.AspNetCore.OpenApi` 10.0.7 — docs served at `/openapi/v1.json` in dev only.
+
+**Decisions made during scaffold:**
+- Used `ConcurrentDictionary<Guid, ScoreRecord>` (per task spec) instead of ConcurrentBag
+- `QuizSummary.Id` field (not `quizId`) to match task spec for the list endpoint
+- `Content Update` (not `Include`) in .csproj for quiz JSON files to avoid NETSDK1022 duplicate items error
+- Camelcase serialization applied globally via `ConfigureHttpJsonOptions` — no need for `[JsonPropertyName]` attributes on records
+
+---
+
+### 2026-05-09T21:00:15 — Backend Smoke Test (Live Run)
+
+**All 4 endpoints verified against running server (PID 58580, port 5000):**
+
+| Endpoint | Status | Notes |
+|---|---|---|
+| `GET /health` | 200 ✅ | `{"status":"healthy","timestamp":"..."}` |
+| `GET /api/quizzes` | 200 ✅ | Returns list of 2 QuizSummary objects (no questions array) |
+| `GET /api/quizzes/world-capitals-001` | 200 ✅ | Full quiz with `correctIndex` per question |
+| `POST /api/scores` | 200 ✅ | Returns `ScoreResult` with `correctCount`, `percentage`, `passed`, `questionResults[]` |
+
+**CORS verification:**
+- Simple GET with `Origin: http://localhost:5173` → `Access-Control-Allow-Origin: http://localhost:5173` ✅
+- OPTIONS preflight to `/api/scores` with `Access-Control-Request-Method: POST` → 204 with `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers` ✅
+- Note: OPTIONS without `Access-Control-Request-Method` header returns 405 — this is correct ASP.NET Core CORS behavior; only a proper preflight triggers the 204 response.
+
+**Score calculation confirmed:** Submitting 10 answers for world-capitals-001 returned `correctCount: 3`, `percentage: 30`, `passed: false` — server-side recalculation is working.
+
+**No issues found.** Backend is fully operational.
+
+---
+
+### 2026-05-09T21:00:15 — Squad Orchestration: Frontend Integration Complete
+
+**Status:** ✅ Integration milestone reached
+
+**What happened:** Miss Scarlett completed end-to-end wiring of `POST /api/scores` into quiz completion flow. Backend now receives score submissions from the frontend.
+
+**Backend now serving:**
+- Score submissions with full answer history via `POST /api/scores`
+- Pass/fail determination returned in response
+- Per-question correctness details in `questionResults[]`
+
+**Team status:** All backend endpoints now actively consumed by frontend. Ready for end-to-end testing.

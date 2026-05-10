@@ -1,0 +1,46 @@
+{
+  "agents": {
+    "scribe": {
+      "status": "active",
+      "universe": "exempt",
+      "persistent_name": "Scribe",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    },
+    "ralph": {
+      "status": "active",
+      "universe": "exempt",
+      "persistent_name": "Ralph",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    },
+    "green": {
+      "status": "active",
+      "universe": "Clue",
+      "persistent_name": "Mr. Green",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    },
+    "peacock": {
+      "status": "active",
+      "universe": "Clue",
+      "persistent_name": "Mrs. Peacock",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    },
+    "scarlett": {
+      "status": "active",
+      "universe": "Clue",
+      "persistent_name": "Miss Scarlett",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    },
+    "plum": {
+      "status": "active",
+      "universe": "Clue",
+      "persistent_name": "Prof. Plum",
+      "created_at": "2026-05-09T20:30:51Z",
+      "legacy_named": false
+    }
+  }
+}

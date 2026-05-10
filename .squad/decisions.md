@@ -157,3 +157,72 @@ Added `using Xunit;` to all three stub files:
 - The xUnit warning (xUnit2020) recommends `Assert.Fail(message)` over `Assert.True(false, message)`. Consider migrating stubs when implementing — not a blocker.
 - Vitest v1.6.1 resolved from `^1.0.0` range.
 
+# Decision: Frontend Integration Check (Scarlett)
+
+**Date:** 2026-05-09T21:00:15-04:00
+**By:** Miss Scarlett
+**Category:** Frontend integration
+
+## What
+
+Verified frontend environment setup and API contract alignment. Identified integration gap: `POST /api/scores` is not yet implemented.
+
+### Checks passed
+- `.env.local` created from `.env.example` with `VITE_API_BASE_URL=http://localhost:5000`
+- Build clean: 65 modules, 670ms
+- All GET endpoints field names match API contract exactly
+- `VITE_API_BASE_URL` read correctly in client.ts with fallback
+- No hardcoded localhost references in views (only in client.ts fallback)
+
+### Gap identified
+- `POST /api/scores` not called anywhere in frontend code
+- `client.ts` has no `postScore()` function
+- `scoreStore` uses local running score, ignores API response fields (`passed`, `questionResults`)
+- Frontend currently shows no pass/fail badge or per-question review (API contract supports this)
+- Answer format would need mapping: `answers[i]` → `[{questionId, selectedIndex}]` for API POST
+
+### Why
+
+ADR-003 specified `POST /api/scores` at completion, but frontend lacks implementation. Flagged for blocking follow-up work.
+
+## Recommendation
+
+Future task should:
+1. Add `postScore()` to `client.ts` with proper type interfaces
+2. Call from `QuizView.vue` at completion with mapped answers
+3. Surface `passed` (pass/fail badge) and `questionResults` (per-question review) in ResultsView
+4. Decide: use API response for scoring (replace client-side) or use for display enrichment
+
+# Decision: POST /api/scores Wired End-to-End (Scarlett)
+
+**Date:** 2026-05-09T21:00:15-04:00
+**By:** Miss Scarlett
+**Category:** Frontend integration
+
+## What
+
+Wired `POST /api/scores` end-to-end into quiz completion flow.
+
+### Implementation
+- **client.ts:** Added `ScoreRequest`, `QuestionResult`, `ScoreResponse` interfaces; added `postScore()` function
+- **scoreStore.ts:** Added `scoreResponse` ref; added `submitScore(quiz, answers)` async action
+- **QuizView.vue:** Replaced local `setResult()` call with `await scoreStore.submitScore()`; added `submitting` state + spinner overlay; error handling
+- **ResultsView.vue:** Added pass/fail badge (green/red); added per-question review section (correct/incorrect, selected vs correct, explanation)
+
+### API contract satisfied
+- **Request:** `POST /api/scores` with `{ quizId: string, answers: [{questionId, selectedIndex}] }` ✅
+- **Response fields used:** `correctCount`, `totalQuestions`, `percentage`, `passed`, `questionResults` ✅
+
+### Why
+
+ADR-003 specified POST to `/api/scores` at completion — this implements the previously identified gap. Navigation to results now gated on API response, guaranteeing score data available when ResultsView mounts.
+
+### UX decisions
+- "Submitting…" spinner shown during API call (replaces quiz content)
+- Error state surfaces API failures inline (no silent failure)
+- Passed/failed badge green/red using API `passed` field
+- Per-question review rendered only when `scoreResponse` available (graceful if API never called)
+
+### Build
+Clean: 65 modules, 678ms, exit 0.
+

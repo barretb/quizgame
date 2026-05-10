@@ -45,3 +45,41 @@ Stack TBD — to be determined with Barret.
 - Mr. Green: Include `Question.CorrectOptionIndex` in API response (confirmed in backend design)
 - Miss Scarlett: Use correctIndex immediately for green/red visual feedback (1200ms delay before auto-advance)
 - Barret: Intentional tradeoff documented and approved
+
+---
+
+### 2026-05-09T21:02:56 — Initial Source Code Committed
+
+**Action:** Committed all source code scaffolding to main branch.
+
+**Commit hash:** 5954ccc7ef08ae615c45fa8106c07c826355566c
+
+**What was committed:**
+- Backend: Complete .NET Core 10 Web API scaffold with 4 endpoints, service interfaces, 2 sample quizzes with 10 questions each
+- Frontend: Complete Vue 3 + Vite + Pinia + TypeScript application with 7 components, 3 views, 2 stores (.env.local for dev setup)
+- Tests: Test stubs for backend (xUnit) and frontend (Vitest with jsdom)
+- Infra: .github/ workflows, .gitignore, .gitattributes, .specify/ extensions, .copilot/ skills
+
+**Git status after:** Only .squad/ files remain untracked (owned by Scribe for team state management)
+
+**Team readiness:** Backend and frontend are ready for feature branch development. Next: staging area protocols via .specify/ workflows.
+
+---
+
+### 2026-05-09T21:00:15 — Squad Orchestration: POST /api/scores Integration Complete
+
+**Status:** ✅ Integration milestone reached
+
+**What happened:** Miss Scarlett completed end-to-end wiring of `POST /api/scores` into quiz completion flow. This was the final integration gap (identified in her integration check).
+
+**Integration complete:**
+- Frontend now POSTs quiz answers to `/api/scores` on completion
+- Results navigation gated on successful API response
+- Pass/fail badge + per-question review now displayed in ResultsView
+- Build verified clean: 65 modules, 678ms
+
+**Commit incoming:** Two commits queued:
+1. Source code commit with POST integration (client.ts, scoreStore, QuizView, ResultsView)
+2. Squad state commit (.squad/ files)
+
+**Team status:** All core features now wired end-to-end. Ready for testing and QA.

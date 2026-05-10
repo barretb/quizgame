@@ -1,0 +1,30 @@
+{
+  "universe_usage_history": [
+    "Clue"
+  ],
+  "assignment_cast_snapshots": {
+    "2026-05-09-quizgame-init": {
+      "assignment_id": "2026-05-09-quizgame-init",
+      "universe": "Clue",
+      "agents": [
+        {
+          "persistent_name": "Prof. Plum",
+          "folder": "plum"
+        },
+        {
+          "persistent_name": "Miss Scarlett",
+          "folder": "scarlett"
+        },
+        {
+          "persistent_name": "Mr. Green",
+          "folder": "green"
+        },
+        {
+          "persistent_name": "Mrs. Peacock",
+          "folder": "peacock"
+        }
+      ],
+      "created_at": "2026-05-09T20:30:51Z"
+    }
+  }
+}
