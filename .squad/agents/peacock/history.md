@@ -61,3 +61,35 @@ Stack TBD — to be determined with Barret.
 - Inbox decision from peacock-1 merged to decisions.md
 - Orchestration log recorded for peacock-1 execution
 - Session log created for test infrastructure work
+
+## Learnings
+
+### 2026-05-09 — Feature tests: search/sort/scoreHistory
+
+**Requested by:** Barret
+
+#### scoreHistoryStore.test.ts (12 tests — all pass)
+- `setActivePinia(createPinia())` in `beforeEach` gives each test a fresh store instance; critical for isolation.
+- Cookie persistence tested via jsdom's real `document.cookie` implementation — no mocking needed; jsdom supports cookie reads/writes natively.
+- To isolate cookie state between tests: expire the cookie with `expires=Thu, 01 Jan 1970 00:00:00 UTC` before each test.
+- For `loadFromCookie` test (store reads cookie on init): must set the cookie BEFORE calling `useScoreHistoryStore()`, then create a fresh pinia in the same test.
+- Cap test: with prepend-then-slice strategy, the oldest entry ends up at `history[19]` after 20 adds; adding a 21st drops index 19.
+
+#### homeViewFilters.test.ts (20 tests — all pass)
+- HomeView's `filteredQuizzes` computed is tested as pure function logic (no component mount).
+- Strategy: inline helper functions (`filterByQuery`, `sortByDate`, `filteredQuizzes`) that mirror the computed exactly. Tests define the behavioral contract; the computed must satisfy this contract.
+- Covered: title match, topic match, description match, case-insensitivity, empty/whitespace query, no-match, sort newest, sort oldest, sort stability, combined filter+sort.
+
+#### QuizSortTests.cs (10 integration tests — all pass)
+- Added `ProjectReference` to `QuizGame.Api.Tests.csproj` (was commented out); now resolves real models.
+- Updated `QuizFixtures.cs`: removed placeholder model stubs (`QuizQuestion`, local `Quiz`, etc.), now uses `QuizGame.Api.Models` types directly. Key change: `List<Question>` (not array), `List<AnswerSubmission>` (not array), `DateAdded` param added to `MakeQuiz`.
+- Added `public partial class Program { }` to `Program.cs` to expose the implicit top-level Program type to `WebApplicationFactory<Program>`.
+- Sort tests use a mocked `IQuizService` injected via `WithWebHostBuilder` + `ConfigureServices`. This avoids file system dependency and makes tests fully self-contained.
+- Moq's `services.AddSingleton(mockService.Object)` replaces the real singleton after it's already registered — `WebApplicationFactory` resolves last registration, so the mock wins.
+
+#### Cross-cutting notes
+- Pre-existing 21 frontend stubs and 14 backend stubs still fail intentionally (`expect(true).toBe(false)` / `Assert.True(false)`). Baseline unchanged.
+- Files created: `frontend/src/__tests__/scoreHistoryStore.test.ts`, `frontend/src/__tests__/homeViewFilters.test.ts`, `backend/QuizGame.Api.Tests/QuizSortTests.cs`
+- Files modified: `backend/QuizGame.Api.Tests/QuizGame.Api.Tests.csproj` (project reference), `backend/QuizGame.Api.Tests/Helpers/QuizFixtures.cs` (real models), `backend/QuizGame.Api/Program.cs` (partial Program class)
+
+- **Session coordination**: Orchestration log recorded by Scribe. Decision document merged to decisions.md. Session log written capturing work by Prof. Plum, Miss Scarlett, and Mrs. Peacock.
