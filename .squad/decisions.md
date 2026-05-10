@@ -97,6 +97,21 @@
 **What:** Star rating (0–5 stars) plus numeric display ("8 / 10"). Stars bucketed from percentage.
 **Why:** Clean and immediately readable.
 
+### 2026-05-09T20:45:11: Backend scaffold complete
+**By:** Mr. Green
+**What:** Full .NET Core 10 Minimal API backend with 4 endpoints (GET /health, GET /api/quizzes, GET /api/quizzes/{id}, POST /api/scores). Quiz file storage at backend/Data/Quizzes/. Sample quizzes included: world-capitals-001.json, general-knowledge-001.json. CORS configured for localhost:5173. Swagger in development only.
+**Why:** Provides backend foundation with binding API contract for frontend development. All endpoints smoke-tested and working.
+
+### 2026-05-09T20:45:11: Test infrastructure and strategy
+**By:** Mrs. Peacock
+**What:** Three-layer architecture: xUnit for backend unit/integration tests (backend/QuizGame.Api.Tests/), Vitest for frontend (frontend/src/__tests__/). Stubs use failing assertions until implementation. Key contracts: GET /api/quizzes excludes questions, GET /api/quizzes/{id} includes correctIndex, <10 questions invalid, 0-3 star thresholds 0-39%/40-59%/60-79%/80-100%.
+**Why:** Prevents silent test passes on unimplemented code. Clear test contracts align with ADR decisions. Full edge cases documented in tests/TEST-PLAN.md.
+
+### 2026-05-09T20:45:11: Frontend scaffold decisions
+**By:** Miss Scarlett
+**What:** (1) Auto-advance set to 1500ms (extended 300ms for explanation reading). (2) Explanation text shown immediately after answer (UX bonus). (3) Three-star rating system (0-39%→0, 40-59%→1, 60-79%→2, 80-100%→3). (4) src/env.d.ts added for Vite import.meta.env types. (5) tsconfig.json excludes src/__tests__/** from build. (6) Dark theme with CSS custom properties (dark #0f0f1a, purple primary #6c63ff, success/error colors).
+**Why:** 1500ms delay supports learning retention with explanations. Three-star system aligns with spec. Env types prevent TS errors. Excluded test files allow build success. Dark theme creates energetic but polished quiz experience. Bridge to Peacock: needs tsconfig.test.json or vitest types for test files.
+
 ## Governance
 
 - All meaningful changes require team consensus
