@@ -151,6 +151,20 @@ Stack TBD — to be determined with Barret.
 - QuizView.vue needed no changes (submitScore still async)
 - ResultsView.vue needed no changes (scoreResponse shape unchanged)
 
+### 2026-05-10T10:14:05 — GitHub Repo Link in Header
+
+**Task:** Add a GitHub repo link to the right side of the app header.
+
+**Actions:**
+- Edited `frontend/src/App.vue`: added an `<a>` tag with `target="_blank"` and `rel="noopener noreferrer"` linking to `https://github.com/barretb/quizgame`, placed after the `.brand` RouterLink inside `.header-inner`
+- Included an inline GitHub SVG icon (standard Octocat mark path) and a "GitHub" text label
+- Added `.github-link`, `.github-icon`, `.github-label` styles: `margin-left: auto` pushes the link to the far right of the flex row; color uses `--color-text-muted` with a hover transition to `--color-text` — understated, matches existing header aesthetic
+- No new dependencies; pure SVG inline, zero runtime cost
+
+**Findings:**
+- `margin-left: auto` on `.github-link` is the cleanest way to right-align within an existing flex row without changing the `.header-inner` layout
+- Used `aria-label` on the anchor and `aria-hidden` on the SVG for accessibility
+
 ---
 
 ### 2026-05-09T20:36:16 — Scoring Approach Cross-Team Decision
