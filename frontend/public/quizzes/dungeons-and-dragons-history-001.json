@@ -1,0 +1,220 @@
+{
+  "quizId": "dungeons-and-dragons-history-001",
+  "title": "Dungeons & Dragons History",
+  "topic": "Tabletop RPG History",
+  "description": "From Chainmail roots to modern editions, test your knowledge of the history of Dungeons & Dragons across 30 questions.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "In what year was the original Dungeons & Dragons boxed set first published?",
+      "options": ["1970", "1972", "1974", "1976"],
+      "correctIndex": 2,
+      "explanation": "The original Dungeons & Dragons boxed set was first published in 1974 by Tactical Studies Rules (TSR)."
+    },
+    {
+      "questionId": "q2",
+      "text": "Who are the two primary co-creators of Dungeons & Dragons?",
+      "options": ["Dave Arneson and Gary Gygax", "Tim Kask and Gary Gygax", "Dave Arneson and Rob Kuntz", "Gary Gygax and Frank Mentzer"],
+      "correctIndex": 0,
+      "explanation": "D&D is primarily credited to Dave Arneson and Gary Gygax, who built on miniature wargaming concepts."
+    },
+    {
+      "questionId": "q3",
+      "text": "What tabletop game directly influenced early D&D combat rules?",
+      "options": ["Diplomacy", "Chainmail", "Traveller", "Boot Hill"],
+      "correctIndex": 1,
+      "explanation": "Chainmail, a medieval miniatures wargame by Gygax and Jeff Perren, strongly influenced early D&D combat."
+    },
+    {
+      "questionId": "q4",
+      "text": "What does TSR stand for?",
+      "options": ["Tabletop Strategy Rules", "Tactical Studies Rules", "Tournament Simulation Rules", "Traditional Storytelling Rules"],
+      "correctIndex": 1,
+      "explanation": "TSR stands for Tactical Studies Rules, the company that originally published D&D."
+    },
+    {
+      "questionId": "q5",
+      "text": "What was the title commonly used for the original 1974 version of D&D?",
+      "options": ["Advanced Dungeons & Dragons", "Basic Dungeons & Dragons", "Original Dungeons & Dragons (OD&D)", "Classic D&D 1E"],
+      "correctIndex": 2,
+      "explanation": "Fans commonly refer to the 1974 game as Original Dungeons & Dragons, or OD&D."
+    },
+    {
+      "questionId": "q6",
+      "text": "Which class was NOT in the original 1974 rules?",
+      "options": ["Fighting-Man", "Magic-User", "Cleric", "Paladin"],
+      "correctIndex": 3,
+      "explanation": "Paladin was introduced later; the original classes were Fighting-Man, Magic-User, and Cleric (with Thief added soon after)."
+    },
+    {
+      "questionId": "q7",
+      "text": "What is often considered the first published D&D adventure module?",
+      "options": ["Keep on the Borderlands", "Palace of the Vampire Queen", "Tomb of Horrors", "Village of Hommlet"],
+      "correctIndex": 1,
+      "explanation": "Palace of the Vampire Queen (1976), by Wee Warriors, is often cited as the first published D&D adventure module."
+    },
+    {
+      "questionId": "q8",
+      "text": "When did Advanced Dungeons & Dragons (1st Edition) begin releasing core books?",
+      "options": ["1977", "1979", "1981", "1983"],
+      "correctIndex": 0,
+      "explanation": "AD&D 1st Edition began with the Monster Manual in 1977, followed by the Player's Handbook (1978) and DMG (1979)."
+    },
+    {
+      "questionId": "q9",
+      "text": "Who wrote the AD&D 1st Edition Dungeon Masters Guide?",
+      "options": ["Dave Arneson", "Gary Gygax", "Frank Mentzer", "Tom Moldvay"],
+      "correctIndex": 1,
+      "explanation": "Gary Gygax wrote the AD&D 1st Edition Dungeon Masters Guide, published in 1979."
+    },
+    {
+      "questionId": "q10",
+      "text": "Which setting debuted in 1980 with Tracy and Laura Hickman module work and later novels?",
+      "options": ["Greyhawk", "Forgotten Realms", "Dragonlance", "Dark Sun"],
+      "correctIndex": 2,
+      "explanation": "Dragonlance became a major D&D setting in the 1980s, tied closely to adventure modules and novels."
+    },
+    {
+      "questionId": "q11",
+      "text": "What was the broad public panic around D&D in the 1980s often called?",
+      "options": ["The Fantasy Fear", "The Satanic Panic", "The Dice Panic", "The Roleplay Crisis"],
+      "correctIndex": 1,
+      "explanation": "D&D was swept up in the broader Satanic Panic, despite no evidence linking the game to real-world harm."
+    },
+    {
+      "questionId": "q12",
+      "text": "In 1983, which red-box Basic D&D set became especially famous?",
+      "options": ["Holmes Basic", "Moldvay Basic", "Mentzer Basic", "Cook Basic"],
+      "correctIndex": 2,
+      "explanation": "Frank Mentzer's 1983 Basic Set (the famous red box) was hugely influential for new players."
+    },
+    {
+      "questionId": "q13",
+      "text": "What year did AD&D 2nd Edition release?",
+      "options": ["1987", "1989", "1991", "1993"],
+      "correctIndex": 1,
+      "explanation": "AD&D 2nd Edition was released in 1989 and revised many rules and presentation choices from 1E."
+    },
+    {
+      "questionId": "q14",
+      "text": "Which company acquired TSR in 1997?",
+      "options": ["White Wolf", "Chaosium", "Wizards of the Coast", "Hasbro"],
+      "correctIndex": 2,
+      "explanation": "Wizards of the Coast acquired TSR in 1997, taking over publication of Dungeons & Dragons."
+    },
+    {
+      "questionId": "q15",
+      "text": "Which edition introduced the d20 System and Open Game License era in 2000?",
+      "options": ["AD&D 2nd Edition", "D&D 3rd Edition", "D&D 4th Edition", "D&D Basic"],
+      "correctIndex": 1,
+      "explanation": "D&D 3rd Edition launched in 2000 with the d20 System and OGL, significantly changing the RPG market."
+    },
+    {
+      "questionId": "q16",
+      "text": "What is the common shorthand for the 2003 revision of 3rd Edition?",
+      "options": ["3X", "3.25", "3.5", "3R"],
+      "correctIndex": 2,
+      "explanation": "The 2003 revision is commonly called D&D 3.5, updating and rebalancing many 3E rules."
+    },
+    {
+      "questionId": "q17",
+      "text": "What year did D&D 4th Edition release?",
+      "options": ["2006", "2008", "2010", "2012"],
+      "correctIndex": 1,
+      "explanation": "D&D 4th Edition released in 2008 with a strong tactical-combat focus and distinct class roles."
+    },
+    {
+      "questionId": "q18",
+      "text": "Which game, released in 2009, was built from D&D 3.5 under the OGL and became a major competitor?",
+      "options": ["13th Age", "Pathfinder", "Savage Worlds", "Numenera"],
+      "correctIndex": 1,
+      "explanation": "Pathfinder (1st Edition) was built from the D&D 3.5 SRD under the OGL and became highly popular."
+    },
+    {
+      "questionId": "q19",
+      "text": "What year did D&D 5th Edition first release?",
+      "options": ["2012", "2014", "2016", "2018"],
+      "correctIndex": 1,
+      "explanation": "D&D 5th Edition launched in 2014 after a long public playtest period known as D&D Next."
+    },
+    {
+      "questionId": "q20",
+      "text": "What was the public playtest name used before 5th Edition launched?",
+      "options": ["D&D Open", "D&D Next", "D&D Future", "D&D Prime"],
+      "correctIndex": 1,
+      "explanation": "Before 5E's release, Wizards ran an extensive public playtest under the name D&D Next."
+    },
+    {
+      "questionId": "q21",
+      "text": "Which livestream and actual-play culture shift significantly boosted D&D's mainstream visibility in the 2010s?",
+      "options": ["Board game conventions only", "MMORPG launches", "Actual-play streaming shows", "LARP television"],
+      "correctIndex": 2,
+      "explanation": "Actual-play streaming shows helped bring D&D to mainstream audiences and new generations of players."
+    },
+    {
+      "questionId": "q22",
+      "text": "In 1999, which toy and game company acquired Wizards of the Coast?",
+      "options": ["Mattel", "Hasbro", "Milton Bradley", "Ravensburger"],
+      "correctIndex": 1,
+      "explanation": "Hasbro acquired Wizards of the Coast in 1999, making D&D part of Hasbro's portfolio."
+    },
+    {
+      "questionId": "q23",
+      "text": "Which classic world was Gary Gygax's original campaign setting?",
+      "options": ["Forgotten Realms", "Dragonlance", "Greyhawk", "Eberron"],
+      "correctIndex": 2,
+      "explanation": "Greyhawk was Gary Gygax's foundational campaign setting and an early cornerstone of D&D lore."
+    },
+    {
+      "questionId": "q24",
+      "text": "Who is the creator of the Forgotten Realms setting before it became official D&D material?",
+      "options": ["Ed Greenwood", "R. A. Salvatore", "Jeff Grubb", "Margaret Weis"],
+      "correctIndex": 0,
+      "explanation": "Ed Greenwood created the Forgotten Realms, later adopted as a major official D&D setting."
+    },
+    {
+      "questionId": "q25",
+      "text": "What famous 1978 module by Gary Gygax is known for deadly traps and a demilich?",
+      "options": ["Keep on the Borderlands", "Tomb of Horrors", "White Plume Mountain", "Against the Giants"],
+      "correctIndex": 1,
+      "explanation": "Tomb of Horrors is known for brutal traps and the demilich Acererak, and remains an iconic challenge module."
+    },
+    {
+      "questionId": "q26",
+      "text": "Which mechanic remained a central identity of D&D across editions?",
+      "options": ["Percentile-only checks", "Tarot card draws", "Rolling polyhedral dice, especially the d20", "Miniatures are always mandatory"],
+      "correctIndex": 2,
+      "explanation": "Polyhedral dice, especially the d20 for core resolution in modern editions, are central to D&D's identity."
+    },
+    {
+      "questionId": "q27",
+      "text": "What was the name of the open-content license used by Wizards during the 3E era?",
+      "options": ["Creative Commons", "Open Game License (OGL)", "Game Maker License", "D20 Commons"],
+      "correctIndex": 1,
+      "explanation": "The Open Game License (OGL) allowed third-party publishing based on the System Reference Document."
+    },
+    {
+      "questionId": "q28",
+      "text": "Which 5E adventure was released with and popularized the hardback campaign model in 2014?",
+      "options": ["Out of the Abyss", "Hoard of the Dragon Queen", "Curse of Strahd", "Storm King's Thunder"],
+      "correctIndex": 1,
+      "explanation": "Hoard of the Dragon Queen was one of the first major 5E hardback campaigns and launched the Tyranny of Dragons storyline."
+    },
+    {
+      "questionId": "q29",
+      "text": "In broad terms, how did 5E's design approach differ from 4E?",
+      "options": ["More focus on rulings and flexibility", "No classes or levels", "Eliminated combat", "Only grid-based play"],
+      "correctIndex": 0,
+      "explanation": "5E intentionally emphasized simplicity, flexibility, and DM rulings compared to 4E's heavier tactical structure."
+    },
+    {
+      "questionId": "q30",
+      "text": "What anniversary did D&D celebrate in 2024 based on its 1974 release year?",
+      "options": ["40th", "45th", "50th", "55th"],
+      "correctIndex": 2,
+      "explanation": "From 1974 to 2024 marks 50 years of Dungeons & Dragons."
+    }
+  ],
+  "dateAdded": "2026-05-16T12:00:00+00:00"
+}

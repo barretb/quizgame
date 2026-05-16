@@ -1,5 +1,21 @@
 [
   {
+    "quizId": "dungeons-and-dragons-history-001",
+    "title": "Dungeons & Dragons History",
+    "topic": "Tabletop RPG History",
+    "description": "From Chainmail roots to modern editions, test your knowledge of the history of Dungeons & Dragons across 30 questions.",
+    "questionCount": 30,
+    "dateAdded": "2026-05-16T12:00:00+00:00"
+  },
+  {
+    "quizId": "tabletop-rpgs-general-001",
+    "title": "Tabletop RPGs: General Knowledge",
+    "topic": "Tabletop Role-Playing Games",
+    "description": "Explore systems, terminology, and history across tabletop role-playing games in this 30-question challenge.",
+    "questionCount": 30,
+    "dateAdded": "2026-05-16T12:00:00+00:00"
+  },
+  {
     "quizId": "software-development-languages-001",
     "title": "Software Development Languages",
     "topic": "Programming / Software Development",

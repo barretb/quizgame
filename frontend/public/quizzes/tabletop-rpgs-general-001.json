@@ -1,0 +1,220 @@
+{
+  "quizId": "tabletop-rpgs-general-001",
+  "title": "Tabletop RPGs: General Knowledge",
+  "topic": "Tabletop Role-Playing Games",
+  "description": "Explore systems, terminology, and history across tabletop role-playing games in this 30-question challenge.",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "questionId": "q1",
+      "text": "What does the abbreviation TTRPG stand for?",
+      "options": ["Tabletop Tactical Role Play Game", "Tabletop Role-Playing Game", "Turn-Based Table Roleplay Grid", "Table Role Program Game"],
+      "correctIndex": 1,
+      "explanation": "TTRPG stands for Tabletop Role-Playing Game."
+    },
+    {
+      "questionId": "q2",
+      "text": "What is the primary role of a GM or DM in most TTRPGs?",
+      "options": ["Track only hit points", "Play all player characters", "Present the world, adjudicate rules, and portray NPCs", "Roll all player dice"],
+      "correctIndex": 2,
+      "explanation": "The GM/DM facilitates play by presenting situations, running NPCs, and adjudicating outcomes."
+    },
+    {
+      "questionId": "q3",
+      "text": "What does NPC usually mean in role-playing games?",
+      "options": ["Narrative Plot Character", "Non-Player Character", "New Player Class", "Numbered Player Card"],
+      "correctIndex": 1,
+      "explanation": "NPC means Non-Player Character, typically controlled by the GM."
+    },
+    {
+      "questionId": "q4",
+      "text": "In many games, what does 'session zero' usually refer to?",
+      "options": ["The final session", "A pre-campaign planning and expectations session", "A no-rules test session", "A solo prologue run"],
+      "correctIndex": 1,
+      "explanation": "Session zero is commonly used to align group expectations, tone, character concepts, and safety tools."
+    },
+    {
+      "questionId": "q5",
+      "text": "Which die is commonly abbreviated as d20?",
+      "options": ["Ten-sided die", "Twelve-sided die", "Twenty-sided die", "Percentile die"],
+      "correctIndex": 2,
+      "explanation": "A d20 is a twenty-sided die."
+    },
+    {
+      "questionId": "q6",
+      "text": "What is a 'critical hit' in many RPG systems?",
+      "options": ["A guaranteed miss", "An especially effective success", "A social-only action", "A rest action"],
+      "correctIndex": 1,
+      "explanation": "A critical hit usually represents an unusually strong successful attack or action."
+    },
+    {
+      "questionId": "q7",
+      "text": "What does 'homebrew' usually mean in a TTRPG context?",
+      "options": ["Official errata", "Player-owned dice", "Custom content made by the group or GM", "A prewritten module"],
+      "correctIndex": 2,
+      "explanation": "Homebrew refers to custom rules, settings, monsters, classes, or adventures created by players or GMs."
+    },
+    {
+      "questionId": "q8",
+      "text": "What is a campaign in tabletop RPGs?",
+      "options": ["A single combat", "A long-running linked series of sessions", "Only convention play", "A character sheet template"],
+      "correctIndex": 1,
+      "explanation": "A campaign is an ongoing series of adventures connected by characters, setting, and story."
+    },
+    {
+      "questionId": "q9",
+      "text": "What is a one-shot?",
+      "options": ["A game intended for one session", "A game with one die", "A game with one player", "A game without combat"],
+      "correctIndex": 0,
+      "explanation": "A one-shot is designed to be completed in a single session."
+    },
+    {
+      "questionId": "q10",
+      "text": "Which of these is best known as a science-fiction TTRPG?",
+      "options": ["Call of Cthulhu", "Traveller", "Vampire: The Masquerade", "Pendragon"],
+      "correctIndex": 1,
+      "explanation": "Traveller is one of the most well-known science-fiction tabletop RPGs."
+    },
+    {
+      "questionId": "q11",
+      "text": "Call of Cthulhu is most associated with what style of play?",
+      "options": ["Cosmic horror investigation", "High fantasy dungeon crawling", "Superhero team combat", "Post-apocalyptic racing"],
+      "correctIndex": 0,
+      "explanation": "Call of Cthulhu is known for investigative horror inspired by H. P. Lovecraft's cosmic themes."
+    },
+    {
+      "questionId": "q12",
+      "text": "What does 'actual play' typically refer to?",
+      "options": ["A printed adventure path", "Recorded or streamed sessions of people playing a TTRPG", "Official tournament brackets", "Solo journaling rules"],
+      "correctIndex": 1,
+      "explanation": "Actual play refers to watching or listening to real RPG sessions, often as streams, videos, or podcasts."
+    },
+    {
+      "questionId": "q13",
+      "text": "What is a common purpose of safety tools in RPGs?",
+      "options": ["Speeding up dice math", "Balancing classes", "Helping players set boundaries and comfort levels", "Tracking initiative order"],
+      "correctIndex": 2,
+      "explanation": "Safety tools help groups communicate boundaries and maintain a respectful, comfortable play environment."
+    },
+    {
+      "questionId": "q14",
+      "text": "What is meant by 'rules-lite' in RPG design?",
+      "options": ["Many detailed subsystems", "Few or streamlined mechanics", "No roleplaying allowed", "Only digital play"],
+      "correctIndex": 1,
+      "explanation": "Rules-lite systems use fewer and simpler mechanics to keep focus on fast play and narrative flow."
+    },
+    {
+      "questionId": "q15",
+      "text": "What does 'crunchy' usually imply about an RPG?",
+      "options": ["Heavy mechanical detail and complexity", "Comedic tone", "Only food-themed settings", "No character progression"],
+      "correctIndex": 0,
+      "explanation": "Crunchy games have more detailed mechanics, options, and often denser rules interactions."
+    },
+    {
+      "questionId": "q16",
+      "text": "In many RPGs, what is initiative used for?",
+      "options": ["Determine speaking volume", "Set turn order, especially in combat", "Track inventory weight", "Choose campaign setting"],
+      "correctIndex": 1,
+      "explanation": "Initiative commonly determines the order in which participants act during structured encounters."
+    },
+    {
+      "questionId": "q17",
+      "text": "What is metagaming?",
+      "options": ["Using player knowledge a character would not reasonably have", "Designing maps for the GM", "Roleplaying in first person", "Ignoring all dice rolls"],
+      "correctIndex": 0,
+      "explanation": "Metagaming often means using out-of-character knowledge to influence in-character decisions."
+    },
+    {
+      "questionId": "q18",
+      "text": "Which game is strongly associated with the Storyteller system and modern gothic horror themes?",
+      "options": ["Savage Worlds", "Vampire: The Masquerade", "GURPS", "RuneQuest"],
+      "correctIndex": 1,
+      "explanation": "Vampire: The Masquerade is a flagship Storyteller-system game known for personal and political horror."
+    },
+    {
+      "questionId": "q19",
+      "text": "What does OSR generally stand for in RPG discussions?",
+      "options": ["Open Session Rules", "Old School Revival (or Renaissance)", "Official Story Revision", "Online System Registry"],
+      "correctIndex": 1,
+      "explanation": "OSR commonly means Old School Revival/Renaissance, a movement inspired by early RPG play styles and design."
+    },
+    {
+      "questionId": "q20",
+      "text": "Powered by the Apocalypse (PbtA) games are inspired by which title?",
+      "options": ["Apocalypse World", "Gamma World", "World of Darkness", "Numenera"],
+      "correctIndex": 0,
+      "explanation": "PbtA games derive from Apocalypse World's move-based design framework."
+    },
+    {
+      "questionId": "q21",
+      "text": "Fate Core is especially known for which narrative mechanic?",
+      "options": ["Hex-crawl movement rates", "Aspects and Fate points", "Deckbuilding initiative", "THAC0 tables"],
+      "correctIndex": 1,
+      "explanation": "Fate emphasizes Aspects and Fate points to drive story-relevant character traits and scene details."
+    },
+    {
+      "questionId": "q22",
+      "text": "What does RAW typically stand for?",
+      "options": ["Rules As Written", "Roleplay As Wanted", "Roll And Win", "Rules At Will"],
+      "correctIndex": 0,
+      "explanation": "RAW means Rules As Written, referring to strict interpretation of published text."
+    },
+    {
+      "questionId": "q23",
+      "text": "What does RAI typically stand for?",
+      "options": ["Rules And Items", "Roleplay As Intended", "Rules As Intended", "Rolls Are Irrelevant"],
+      "correctIndex": 2,
+      "explanation": "RAI means Rules As Intended, focusing on likely design intent rather than literal wording alone."
+    },
+    {
+      "questionId": "q24",
+      "text": "What is the purpose of a character sheet?",
+      "options": ["Only to track treasure maps", "To summarize a character's stats, abilities, and key info", "To record table snacks", "To replace rulebooks"],
+      "correctIndex": 1,
+      "explanation": "A character sheet tracks game-relevant character data such as attributes, skills, gear, and advancement."
+    },
+    {
+      "questionId": "q25",
+      "text": "What is an adventure module?",
+      "options": ["A random encounter table only", "A prewritten scenario for a game system", "A character class expansion only", "A miniatures paint guide"],
+      "correctIndex": 1,
+      "explanation": "An adventure module is a prepared scenario that a GM can run, often with maps, NPCs, and plot hooks."
+    },
+    {
+      "questionId": "q26",
+      "text": "What is a common benefit of virtual tabletops (VTTs)?",
+      "options": ["They remove the need for any GM", "They support online play tools like maps, tokens, and dice", "They only work for one game system", "They ban voice chat"],
+      "correctIndex": 1,
+      "explanation": "VTTs help remote groups play by providing shared maps, character tools, and digital dice systems."
+    },
+    {
+      "questionId": "q27",
+      "text": "What does 'theater of the mind' usually describe?",
+      "options": ["Playing only in a theater", "Resolving scenes through spoken description rather than tactical maps", "A no-roleplay mode", "A puzzle-only session"],
+      "correctIndex": 1,
+      "explanation": "Theater of the mind relies on narrative description and imagination instead of precise map grids."
+    },
+    {
+      "questionId": "q28",
+      "text": "GURPS is notable for being what kind of system?",
+      "options": ["A single-setting game", "A universal generic role-playing system", "A diceless storytelling game only", "A card-based skirmish game"],
+      "correctIndex": 1,
+      "explanation": "GURPS stands for Generic Universal RolePlaying System and is designed to support many genres."
+    },
+    {
+      "questionId": "q29",
+      "text": "What is one hallmark of many indie TTRPG designs?",
+      "options": ["Single mandatory setting for all games", "Narrowly focused themes and mechanics for specific experiences", "No character roleplay", "Only percentile dice"],
+      "correctIndex": 1,
+      "explanation": "Many indie RPGs focus tightly on a specific tone, theme, or style, often with purpose-built mechanics."
+    },
+    {
+      "questionId": "q30",
+      "text": "What is the shared goal of most tabletop RPG groups?",
+      "options": ["To always win by rules lawyering", "To collaboratively create engaging experiences and stories", "To avoid character interaction", "To eliminate chance entirely"],
+      "correctIndex": 1,
+      "explanation": "Most groups aim for collaborative fun through shared storytelling, challenge, and memorable moments."
+    }
+  ],
+  "dateAdded": "2026-05-16T12:00:00+00:00"
+}
